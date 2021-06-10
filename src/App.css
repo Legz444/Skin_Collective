@@ -2,19 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623347383/content-pixie-j1WYUNgLbOk-unsplash_ui0pxv.jpg");
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
