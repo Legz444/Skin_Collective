@@ -21,7 +21,7 @@ function App() {
         <Button variant="info">Schedule Now</Button>
       </header>
       <body>
-
+        
       </body>
     </div>
   );
