@@ -1,9 +1,25 @@
+/* //Color Palette// */
+/* 
+light gray: rgb(223 230 233)
+light blue: rgb(183 201 224)
+gray: rgb(101 112 129)
+steal blue: rgb(47 70 85)
+steal: rgb(22 38 46)
+orange: rgb(187 146 117) 
+*/
+
+
+
+
 .App {
   text-align: center;
 }
+.navigate{
+  font-family: 'Fjord One', serif;
+}
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(22 38 46);
   background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623347383/content-pixie-j1WYUNgLbOk-unsplash_ui0pxv.jpg");
   background-size: cover;
   min-height: 100vh;
@@ -12,18 +28,72 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(47 70 85);
+  vertical-align: top;
+  font-family: 'Fjord One', serif;
+  text-shadow: 2px 2px white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.mission{
+  order: 1;
+  width: 100vw;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  background-color: rgb(47 70 85);
+  color: rgb(223 230 233);
+  
+
+}
+.mission h1{
+  margin: auto;
+  max-width: 50%;
+  font-size: calc(18px + 2vmin);
+  font-family: 'Fjord One', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Pictures{
+  padding-top: 100px;
+  order: 2;
+  width: 100vw;
+  background-color: rgb(223 230 233);
+}
+.imageStack{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  margin: auto;
+  max-width: 60%;
+}
+
+.first{
+  grid-column: 2/ span 8;
+  grid-row: 1;
+  padding-top: 25%;
+  z-index: 1;
+}
+
+.second{
+  background-color: rgb(183 201 224);
+  border-radius: 50%;
+  grid-column: 6/ -1;
+  grid-row: 1;
+}
+
+.menu{
+  background-color: rgb(223 230 233);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: rgb(47 70 85);
+  font-family: 'Fjord One', serif;
+}
+
+.Products{
+  background-color: rgb(223 230 233);
+}
+.product-cards{
+  width: 60%;
+  margin: auto;
 }
