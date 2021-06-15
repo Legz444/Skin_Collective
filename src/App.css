@@ -92,8 +92,10 @@ orange: rgb(187 146 117)
 
 .Products{
   background-color: rgb(223 230 233);
+  margin: auto;
 }
 .product-cards{
   width: 60%;
   margin: auto;
+  text-align: center;
 }
