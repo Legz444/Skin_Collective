@@ -1,5 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
+import {Button} from 'react-bootstrap';
 
 const Services = () =>{
     return(
@@ -15,7 +16,9 @@ const Services = () =>{
             <h3>Facials</h3>
                 <h4>$60</h4>
                 <h6>This explains the service in more detail</h6>
+                <Button variant="info">Schedule Now</Button>
         </div>
+        
         </>
     )
 }

@@ -20,7 +20,7 @@ orange: rgb(187 146 117)
 
 .App-header {
   background-color: rgb(22 38 46);
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623347383/content-pixie-j1WYUNgLbOk-unsplash_ui0pxv.jpg");
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623868306/annie-spratt-PtrGWQG2YQY-unsplash_q3kngz.jpg");
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -53,6 +53,11 @@ orange: rgb(187 146 117)
   font-family: 'Fjord One', serif;
 }
 
+.About{
+  background-color: rgb(223 230 233);
+  text-align: center;
+
+}
 .Pictures{
   padding-top: 100px;
   order: 2;
@@ -98,4 +103,12 @@ orange: rgb(187 146 117)
   width: 60%;
   margin: auto;
   text-align: center;
+}
+
+.Contact{
+  background-color: rgb(223 230 233);
+  font-family: 'Fjord One', serif;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }

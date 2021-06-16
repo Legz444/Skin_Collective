@@ -2,9 +2,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import Navigate from './Components/Navigation';
+import About from './Components/About';
 import ImgStack from './Components/ImgStack';
 import Services from './Components/Services';
 import Products from './Components/Products';
+import Contact from './Components/Contact';
+
 
 function App() {
   return (
@@ -27,8 +30,11 @@ function App() {
         <Button variant="info">Schedule Now</Button>
       </header>
       <body>
-        <article id="about" className="mission">
+        <article className="mission">
           <h1 className="mission-text">This is my mission statement. We care about all these things. This is why you choose Skin Collective</h1>
+        </article>
+        <article  id="about" className="About">
+          <About/>
         </article>
         <article className="Pictures">
           <ImgStack/>
@@ -38,6 +44,9 @@ function App() {
         </article>
         <article id="products" className="Products">
           <Products/>
+        </article>
+        <article id="contact" className="Contact">
+          <Contact/>
         </article>
       </body>
     </div>
