@@ -14,13 +14,19 @@ orange: rgb(187 146 117)
 .App {
   text-align: center;
 }
+.button{
+  background-color: rgb(183 201 224) !important;
+  color: rgb(22 38 46) !important;
+  border: none !important;
+}
 .navigate{
   font-family: 'Fjord One', serif;
 }
 
+
 .App-header {
   background-color: rgb(22 38 46);
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623868306/annie-spratt-PtrGWQG2YQY-unsplash_q3kngz.jpg");
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623347383/skin_collective/content-pixie-j1WYUNgLbOk-unsplash_ui0pxv.jpg");
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -41,22 +47,56 @@ orange: rgb(187 146 117)
   height: 350px;
   text-align: center;
   display: flex;
-  background-color: rgb(47 70 85);
+  background-color: rgb(47, 70, 85);
   color: rgb(223 230 233);
   
 
 }
 .mission h1{
   margin: auto;
-  max-width: 50%;
+  max-width: 40%;
   font-size: calc(18px + 2vmin);
   font-family: 'Fjord One', serif;
+}
+.special_words{
+  font-style: italic;
+  color: rgb(101 112 129);
 }
 
 .About{
   background-color: rgb(223 230 233);
+  height: 800px;
+}
+.about_container{
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.stack1{
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 100px;
+}
+.stack2{
+  position: absolute;
+  left: 25%;
+}
+.about_text{
+  font-family: 'Fjord One', serif;
+  position: absolute;
+  right: 60px;
+  top: 50px;
+  width:50%;
+  height: 400px;
+  padding: 50px;
+  background: rgba(47, 70, 85, .6);
   text-align: center;
+  font-size: 1.2rem;
+}
 
+.socmed{
+  z-index: 1;
 }
 .Pictures{
   padding-top: 100px;

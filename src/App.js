@@ -26,18 +26,21 @@ function App() {
         <Navigate/>
       </nav>
       <header className="App-header">
-        <div className="overlay"><h1>Skin Collective</h1></div>
-        <Button variant="info">Schedule Now</Button>
+        <div className="overlay">
+          <img 
+            src="https://res.cloudinary.com/legz444/image/upload/v1624299963/skin_collective/secondary_logo_byvxqd.png"
+            width="400"
+            height="400"
+            alt="Skin Collective Logo"/>
+        </div>
+        <Button className="button">Schedule Now</Button>
       </header>
       <body>
         <article className="mission">
-          <h1 className="mission-text">This is my mission statement. We care about all these things. This is why you choose Skin Collective</h1>
+          <h1 className="mission-text">Your skincare is so much more than an afterthought, it is an <br></br><br></br><span className="special_words">INTENTIONAL PRACTICE</span><br></br><br></br> that is handpicked just for you. </h1>
         </article>
         <article  id="about" className="About">
           <About/>
-        </article>
-        <article className="Pictures">
-          <ImgStack/>
         </article>
         <article id="services" className="Services">
           <Services/>

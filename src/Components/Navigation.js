@@ -8,12 +8,26 @@ import {FiFacebook} from 'react-icons/fi';
 const Navigate = () => {
     return(
         <>
-        <Navbar collapseOnSelect expand={false} bg="light" variant="light">
+        <Navbar collapseOnSelect expand={false} bg="light" variant="light" className="navbar" fixed="top">
             <Navbar.Brand href="#home">
-                Skin Collective
+                <img 
+                src="https://res.cloudinary.com/legz444/image/upload/v1624299955/skin_collective/primary_logo_sgdmn6.png" 
+                width="80"
+                height="80"
+                className="d-inline-block align-top"
+                alt="Skin Collective Logo"
+                />
             </Navbar.Brand>
-            <Nav.Link><FiFacebook/></Nav.Link>
-            <Nav.Link><FaInstagram/></Nav.Link>
+            <Navbar.Text>
+                <Nav.Link 
+                    className="d-inline-block">
+                    <FiFacebook/>
+                </Nav.Link>
+                <Nav.Link 
+                    className="d-inline-block">
+                    <FaInstagram/>
+                </Nav.Link>
+            </Navbar.Text>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
