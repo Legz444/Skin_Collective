@@ -158,19 +158,29 @@ orange: rgb(187 146 117)
 }
 .menu h1{
   color:rgb(47, 70, 85);
+  padding-bottom: 25px;
 }
 
 .card{
+  color:rgb(47, 70, 85)
   /* background-color: rgb(22 38 46) !important; */
 }
+.card h4{
+  padding-top: 10px;
+}
 .Products{
-  background-color: rgb(223 230 233);
+  background-color: rgb(183 201 224);
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .product-cards{
   width: 60%;
   margin: auto;
   text-align: center;
+}
+.product_fig{
+  margin: 25px;
 }
 
 .Contact{

@@ -8,7 +8,7 @@ const Services = () =>{
         <>
         <div className="menu">
             <h1>Services & Packages</h1>
-        <Accordion className="service_menu w-75 mx-auto">
+        <Accordion className="service_menu w-25 mx-auto">
             <Card className="card">
                 <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
