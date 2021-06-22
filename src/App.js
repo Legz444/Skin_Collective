@@ -7,6 +7,7 @@ import ImgStack from './Components/ImgStack';
 import Services from './Components/Services';
 import Products from './Components/Products';
 import Contact from './Components/Contact';
+import Tegan from './Components/Tegan';
 
 
 function App() {
@@ -39,8 +40,11 @@ function App() {
         <article className="mission">
           <h1 className="mission-text">Your skincare is so much more than an afterthought, it is an <br></br><br></br><span className="special_words">INTENTIONAL PRACTICE</span><br></br><br></br> that is handpicked just for you. </h1>
         </article>
-        <article  id="about" className="About">
+        <article className="About">
           <About/>
+        </article>
+        <article id="about" className="Tegan">
+          <Tegan/>
         </article>
         <article id="services" className="Services">
           <Services/>
