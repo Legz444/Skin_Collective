@@ -175,12 +175,12 @@ orange: rgb(187 146 117)
   padding-bottom: 50px;
 }
 .product-cards{
-  width: 60%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
 .product_fig{
-  margin: 25px;
+  padding: 25px !important;
 }
 
 .Contact{
@@ -189,4 +189,10 @@ orange: rgb(187 146 117)
   padding-top: 100px;
   display: flex;
   justify-content: center;
+}
+
+.Modal{
+  background-color: rgb(223 230 233);
+  color:rgb(47 70 85);
+  font-family: 'Fjord One', serif;
 }

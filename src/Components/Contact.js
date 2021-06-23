@@ -1,8 +1,9 @@
 import React from 'react';
 import{useState} from 'react';
-import {Button, Card, Modal} from 'react-bootstrap';
+import {Button, Card, Form, Modal, Col} from 'react-bootstrap';
 import {FaInstagram} from 'react-icons/fa';
 import {FiFacebook} from 'react-icons/fi';
+import {MdSpa} from 'react-icons/md';
 
 const Contact = () => {
     const [show, setShow] = useState(false);
@@ -33,16 +34,38 @@ const Contact = () => {
                     <Card.Link onClick={handleShow}>Contact Us</Card.Link>
                 </Card.Body>
             </Card>
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                <Modal.Title>Reach Out</Modal.Title>
+            <Modal show={show} onHide={handleClose} >
+                <Modal.Header closeButton className="Modal">
+                <Modal.Title >Reach Out</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                <Modal.Footer>
-                <Button variant="info" onClick={handleClose}>
+                <Modal.Body className="Modal">
+                    <Form className="form_container">
+                        <Form.Row>
+                            <Col>
+                                
+                                    <Form.Control placeholder="First name" />
+
+                            </Col>
+                            <Col>
+  
+                                    <Form.Control placeholder="Last name" />
+                         
+                            </Col>
+                        </Form.Row>
+                        <Form.Row>
+                            <Col>
+                              
+                                    <Form.Control as="textarea" placeholder="Message" rows="8"/>
+                             
+                            </Col>
+                        </Form.Row>
+                    </Form>
+                </Modal.Body>
+                <Modal.Footer className="Modal">
+                <Button className="button" onClick={handleClose}>
                     Close
                 </Button>
-                <Button variant="info" onClick={handleClose}>
+                <Button className="button" onClick={handleClose}>
                     Send Message
                 </Button>
                 </Modal.Footer>
@@ -53,9 +76,10 @@ const Contact = () => {
                 <Card.Body>
                     <Card.Title>Follow Us</Card.Title>
                     <Card.Text>
-                        <FaInstagram/>
-                        <FiFacebook/>
+                        Stay Connected for Updates, Deals and New Products.
                     </Card.Text>
+                    <Card.Link><FaInstagram/></Card.Link>
+                    <Card.Link><FiFacebook/></Card.Link>
                 </Card.Body>
             </Card>
         </div>

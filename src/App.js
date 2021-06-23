@@ -29,6 +29,7 @@ function App() {
       <header className="App-header">
         <div className="overlay">
           <img 
+            className= "img-responsive"
             src="https://res.cloudinary.com/legz444/image/upload/v1624299963/skin_collective/secondary_logo_byvxqd.png"
             width="400"
             height="400"
