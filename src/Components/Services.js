@@ -8,7 +8,7 @@ const Services = () =>{
         <>
         <div className="menu">
             <h1>Services & Packages</h1>
-        <Accordion className="service_menu w-25 mx-auto">
+        <Accordion className="service_menu w-50 mx-auto">
             <Card className="card">
                 <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -90,9 +90,9 @@ const Services = () =>{
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
                 <Card.Body>
-                    <h4>4 HydraFacials for $500 ($125 each , save $180)</h4>
+                    <h4>4 HydraFacials for $500 ($125 each)</h4>
                     <MdSpa/>
-                    <h4>3 Microneedles for $750 ($250 each, save $150)</h4>
+                    <h4>3 Microneedles for $750 ($250 each)</h4>
                 </Card.Body>
                 </Accordion.Collapse>
             </Card>

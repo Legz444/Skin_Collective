@@ -18,13 +18,12 @@ const Navigate = () => {
                 alt="Skin Collective Logo"
                 />
             </Navbar.Brand>
-            <Navbar.Text>
-                <Nav.Link 
-                    className="d-inline-block">
+            
+            <Navbar.Text className="d-flex smicon">
+                <Nav.Link className="d-inline-block p-4">
                     <FiFacebook/>
                 </Nav.Link>
-                <Nav.Link 
-                    className="d-inline-block">
+                <Nav.Link className="d-inline-block p-4">
                     <FaInstagram/>
                 </Nav.Link>
             </Navbar.Text>

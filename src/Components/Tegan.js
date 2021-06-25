@@ -5,7 +5,7 @@ const Tegan = () => {
     return(
         <div className="about_Tegan">
             <h1>Tegan Ryan</h1>
-            <h3>Liscensed Aesthetician</h3>
+            <h3>Founder</h3>
         <Figure className="Tegan_figure">
                 <Figure.Image
                     width={250}

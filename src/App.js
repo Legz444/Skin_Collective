@@ -23,6 +23,7 @@ function App() {
       />
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Fjord+One&display=swap" rel="stylesheet"></link>
+      <link href="//db.onlinewebfonts.com/c/f109f08852742e27f747f260abdf6fb8?family=Aubrey" rel="stylesheet" type="text/css"/>
       <nav className="navigate">
         <Navigate/>
       </nav>

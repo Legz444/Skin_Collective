@@ -8,8 +8,18 @@ steal: rgb(22 38 46)
 orange: rgb(187 146 117) 
 */
 
+@import url(//db.onlinewebfonts.com/c/f109f08852742e27f747f260abdf6fb8?family=Aubrey);
 
 
+@font-face {
+  font-family: "Aubrey"; 
+  src: url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.eot"); 
+  src: url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.eot?#iefix") 
+  format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff") format("woff"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.svg#Aubrey") format("svg"); }
+
+body{
+  font-family: 'Darker Grotesque', sans-serif;
+}
 
 .App {
   text-align: center;
@@ -19,11 +29,13 @@ orange: rgb(187 146 117)
   color: rgb(22 38 46) !important;
   border: none !important;
   margin-top: 25px;
-}
-.navigate{
-  font-family: 'Fjord One', serif;
+  font-family: "Aubrey";
 }
 
+.smicon{
+  position: absolute !important;
+  right: 10%;
+}
 
 .App-header {
   background-color: rgb(22 38 46);
@@ -37,7 +49,6 @@ orange: rgb(187 146 117)
   font-size: calc(10px + 2vmin);
   color: rgb(47 70 85);
   vertical-align: top;
-  font-family: 'Fjord One', serif;
   text-shadow: 2px 2px white;
 
 }
@@ -50,23 +61,22 @@ orange: rgb(187 146 117)
   display: flex;
   background-color: rgb(47, 70, 85);
   color: rgb(223 230 233);
-  
+  font-family: 'Darker Grotesque', sans-serif;
 
 }
 .mission h1{
   margin: auto;
   max-width: 40%;
   font-size: calc(18px + 2vmin);
-  font-family: 'Fjord One', serif;
 }
 .special_words{
-  font-style: italic;
+  font-family: "Aubrey"; 
   color: rgb(101 112 129);
 }
 
 .About{
   background-color: rgb(223 230 233);
-  height: 800px;
+  height: 700px;
 }
 .about_container{
   width: 80%;
@@ -76,24 +86,28 @@ orange: rgb(187 146 117)
 .stack1{
   position: absolute;
   z-index: 1;
-  top: 80px;
+  top: 180px;
   left: 100px;
 }
 .stack2{
   position: absolute;
   left: 25%;
+  top: 50px;
 }
 .about_text{
-  font-family: 'Fjord One', serif;
+  font-family: 'Darker Grotesque', sans-serif;
   position: absolute;
   right: 60px;
-  top: 50px;
+  top: 100px;
   width:50%;
   height: 400px;
   padding: 50px;
   background: rgba(47, 70, 85, .6);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: calc(8px + 2vmin);
+}
+.about_text h1{
+  font-family: 'Aubrey';
 }
 
 .socmed{
@@ -105,13 +119,14 @@ orange: rgb(187 146 117)
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  font-family: 'Fjord One', serif;
+  font-family: "Aubrey";
   color: rgb(223 230 233);
 }
 .Tegan_figure{
   width: 50%;
   padding: 10px;
-  font-family: 'Fjord One', serif;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: calc(14px + 2vmin);
   /* color: rgb(22 38 46) !important; */
 }
 .Tegan_text ul{
@@ -123,27 +138,6 @@ orange: rgb(187 146 117)
   width: 100vw;
   background-color: rgb(223 230 233);
 }
-.imageStack{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
-  margin: auto;
-  max-width: 60%;
-}
-
-.first{
-  grid-column: 2/ span 8;
-  grid-row: 1;
-  padding-top: 25%;
-  z-index: 1;
-}
-
-.second{
-  background-color: rgb(183 201 224);
-  border-radius: 50%;
-  grid-column: 6/ -1;
-  grid-row: 1;
-}
 
 .menu{
   /* background-color: rgb(223 230 233); */
@@ -154,11 +148,12 @@ orange: rgb(187 146 117)
   padding-bottom: 100px;
   text-align: center;
   color: rgb(223 230 233);
-  font-family: 'Fjord One', serif;
+  font-family: "Darker Grotesque", sans-serif;
 }
 .menu h1{
   color:rgb(47, 70, 85);
   padding-bottom: 25px;
+  font-family: "Aubrey";
 }
 
 .card{
@@ -185,7 +180,7 @@ orange: rgb(187 146 117)
 
 .Contact{
   background-color: rgb(223 230 233);
-  font-family: 'Fjord One', serif;
+  font-family: 'Darker Grotesque', sans-serif;
   padding-top: 100px;
   display: flex;
   justify-content: center;
@@ -194,5 +189,5 @@ orange: rgb(187 146 117)
 .Modal{
   background-color: rgb(223 230 233);
   color:rgb(47 70 85);
-  font-family: 'Fjord One', serif;
+  font-family: 'Darker Grotesque', sans-serif;
 }
