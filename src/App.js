@@ -43,10 +43,10 @@ function App() {
           <h1 className="mission-text">Your skincare is so much more than an afterthought, it is an <br></br><br></br><span className="special_words">INTENTIONAL PRACTICE</span><br></br><br></br> that is handpicked just for you. </h1>
         </article>
         <article className="About">
-          <About/>
+          <ImgStack/>
         </article>
         <article id="about" className="Tegan">
-          <Tegan/>
+          {/* <ImgStack/> */}
         </article>
         <article id="services" className="Services">
           <Services/>

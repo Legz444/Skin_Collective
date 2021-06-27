@@ -1,9 +1,9 @@
 import React from 'react';
 import{useState} from 'react';
-import {Button, Card, Form, Modal, Col} from 'react-bootstrap';
+import {CardGroup, Button, Card, Form, Modal, Col} from 'react-bootstrap';
 import {FaInstagram} from 'react-icons/fa';
 import {FiFacebook} from 'react-icons/fi';
-import {MdSpa} from 'react-icons/md';
+
 
 const Contact = () => {
     const [show, setShow] = useState(false);
@@ -12,7 +12,7 @@ const Contact = () => {
 
     return(
         <>
-        <div className="location">
+        <CardGroup>
         <Card style={{ width: '18rem' }}>
             <Card.Body>
                 <Card.Title>Location</Card.Title>
@@ -23,8 +23,6 @@ const Contact = () => {
                 <Card.Link>Directions</Card.Link>
             </Card.Body>
         </Card>
-        </div>
-        <div className="form">
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>Reach Out</Card.Title>
@@ -70,8 +68,6 @@ const Contact = () => {
                 </Button>
                 </Modal.Footer>
             </Modal>
-        </div>
-        <div className="sm-links">
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>Follow Us</Card.Title>
@@ -82,7 +78,7 @@ const Contact = () => {
                     <Card.Link><FiFacebook/></Card.Link>
                 </Card.Body>
             </Card>
-        </div>
+        </CardGroup>
         </>
     )
 }

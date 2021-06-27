@@ -15,7 +15,20 @@ orange: rgb(187 146 117)
   font-family: "Aubrey"; 
   src: url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.eot"); 
   src: url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.eot?#iefix") 
-  format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff") format("woff"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.svg#Aubrey") format("svg"); }
+  format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff") format("woff"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.svg#Aubrey") format("svg"); 
+}
+  *::after,
+  *::before{
+      margin: 0;
+      padding: 0%;
+      box-sizing: inherit;
+  }
+  body{
+  font-size: 10;
+  }
+  body {
+     box-sizing: border-box;
+      }
 
 body{
   font-family: 'Darker Grotesque', sans-serif;
@@ -191,3 +204,88 @@ body{
   color:rgb(47 70 85);
   font-family: 'Darker Grotesque', sans-serif;
 }
+
+.first{
+  width: 300px;
+  height: 500px;
+  top: 50px;
+}
+.second{
+  width: 300px;
+  height: 200px;
+  top: 200px;
+
+}
+.imgText{
+  width: 300px;
+  height: 300px;
+  top: 125px;
+}
+.About .first{
+  background-color: blue;
+  left: 15%;
+}
+.About .second{
+  background-color: black;
+  visibility: hidden;
+}
+.About .imgText{
+  background-color: cadetblue;
+}
+
+/* .Tegan .first{
+  background-color: black;
+} */
+
+@media (max-width: 322px){
+  .About .first{
+    width: 250px;
+    height: 450px;
+  }
+  .About .imgText{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 576px){
+  .overlay Img{
+    width: 275px;
+    height: 275px;
+  }
+
+  }
+
+/* // [ sm ] Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+ .About .first{
+   left: 35%;
+ }
+ .About .imgText{
+   left: 10%;
+ }
+}
+
+/* // [ md ] Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  }
+ 
+
+/* // [ lg ] Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+ .About .second{
+   visibility: visible;
+   left: 25%;
+ }
+ .About .imgText{
+   left: 50%;
+ }
+  }
+ 
+
+/* // [ xl ] Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+  }
+
+
