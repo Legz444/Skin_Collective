@@ -19,11 +19,11 @@ const Navigate = () => {
                 />
             </Navbar.Brand>
             
-            <Navbar.Text className="d-flex smicon">
-                <Nav.Link className="d-inline-block p-4">
+            <Navbar.Text className="nav d-flex smicon">
+                <Nav.Link className="d-inline-block p-3">
                     <FiFacebook/>
                 </Nav.Link>
-                <Nav.Link className="d-inline-block p-4">
+                <Nav.Link className="d-inline-block p-3">
                     <FaInstagram/>
                 </Nav.Link>
             </Navbar.Text>

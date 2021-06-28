@@ -45,14 +45,14 @@ function App() {
         <article className="About">
           <ImgStack/>
         </article>
-        <article id="about" className="Tegan">
-          {/* <ImgStack/> */}
-        </article>
         <article id="services" className="Services">
           <Services/>
         </article>
         <article id="products" className="Products">
           <Products/>
+        </article>
+        <article id="about" className="Tegan">
+          <Tegan/>
         </article>
         <article id="contact" className="Contact">
           <Contact/>
