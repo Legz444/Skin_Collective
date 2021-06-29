@@ -65,7 +65,10 @@ body{
   text-shadow: 2px 2px white;
 
 }
-
+.overlay Img{
+  width: 200px;
+  height: 200px;
+}
 .mission{
   order: 1;
   width: 100vw;
@@ -160,7 +163,7 @@ body{
   color: rgb(223 230 233);
   font-family: "Darker Grotesque", sans-serif;
 }
-.menu h1{
+.menu h3{
   color:rgb(47, 70, 85);
   padding-bottom: 25px;
   font-family: "Aubrey";
@@ -214,7 +217,7 @@ body{
 .imgText{
   background-color: rgba(101, 112, 129, .4);
   width: 300px;
-  height: 350px;
+  height: 300px;
   top: 50px;
 }
 .imgText p{
@@ -223,22 +226,16 @@ body{
 }
 
 .About{
-  /* background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753629/skin_collective/pexels-cottonbro-4612151_xd68zg.jpg");
-  background-size: cover;
-  background-position: center; */
   min-height: 100vh;
   background-color: rgb(223 230 233);
-  margin: auto;
 }
 .About .first{
   background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753629/skin_collective/pexels-cottonbro-4612151_xd68zg.jpg");
   background-size: cover;
-  left: 5%;
-  top: 350px;
-  z-index: 1;
 }
 .About .second{
-  background-color: black;
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624899187/skin_collective/amanda-dalbjorn-fvInY-Gh7sc-unsplash_xgxmym.jpg");
+  background-size: cover;
   visibility: hidden;
 }
 .About .imgText h4{
@@ -249,9 +246,6 @@ body{
 }
 .About .imgText{
   color:rgb(22 38 46);
-  text-align: center;
-  padding: 5px;
-  right: 5%;
 }
 .About .p2{
   visibility: hidden;
@@ -319,13 +313,12 @@ body{
 
 /* Media queries */
 
-@media (max-width: 322px){
+@media (min-width: 319px){
   .nav{
     visibility: hidden;
   }
   .imgText{
     background-color: rgba(223, 230, 233, .7);
-    color: black;
   }
   .About{
     background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753629/skin_collective/pexels-cottonbro-4612151_xd68zg.jpg");
@@ -336,255 +329,196 @@ body{
   }
   .About .imgText{
     top: 150px;
-    width: 250px;
-    height: 350px;
+    width: 90vw;
+    height: 55vh;
+    left: 5vw;
+  }
+  .About .imgText p{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: calc(8px + 2vmin);
+    width: 80%;
+    margin: auto;
   }
   .card h4{
     font-size: medium;
   }
 }
-@media (min-width: 565px){
-  .overlay Img{
-    margin-top: 100px;
-  }
-  .App-header button{
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 576px){
-  .overlay Img{
-    width: 275px;
-    height: 275px;
-  }
-  .nav{
-    visibility: hidden;
-  }
-  .imgText{
-    background-color: rgba(223, 230, 233, .7);
-    color: black;
-  }
-  .About{
-    background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753629/skin_collective/pexels-cottonbro-4612151_xd68zg.jpg");
-    background-size: cover;
-  }
-  .About .first{
-    display: none;
-  }
-  .About .imgText{
-    top: 150px;
-    left: 15%;
-    width: 250px;
-    height: 350px;
-  }
-}
-
-/* // [ sm ] Small devices (landscape phones, 576px and up) */ 
-@media (min-width: 565px) {
-  .imgText{
-    background-color: rgba(223, 230, 233, .7);
-    color: black;
-  }
-  .About .first{
-    left: 5%;
-    top: 10px;
-    height: 325px;
-  }
-  .About .imgText{
-    top: 10px;
-    right: 5%;
-    width: 350px;
-    height: 350px;
-  }
+@media (min-width: 400px){
   .About .imgText p{
     font-size: calc(12px + 2vmin);
   }
 }
-@media (min-width: 635px){
+
+
+/* // [ sm ] Small devices (landscape phones, 576px and up) */ 
+@media (min-width: 565px) {
+  .nav{
+    visibility: visible;
+  }
   .overlay Img{
     margin-top: 100px;
+    width: 300px;
+    height: 300px;
   }
-  .App-header button{
-    margin-bottom: 50px;
+  .App-header{
+    padding-bottom: 50px;
+  }
+  .About{
+    background-image: none;
+    background-color:rgb(223, 230, 233)
+  }
+  .About .first{
+    display:inherit;
+    position: absolute;
+    width: 40vw;
+    height: 80vh;
+    top: 30px;
+    left: 5vw;
+  }
+  .About .imgText{
+    top: 10px;
+    height: 90vh;
+    width: 50vw;
+    left: 50vw;
+
+  }
+  .About .imgText p{
+    font-size: calc(8px + 2vmin);
   }
 }
 /* // [ md ] Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 765px) {
+  .About{
+    height: 130vh;
+    max-height: 800px;
+  }
   .About .first{
-    top: 50px;
-    height: 600px;
-    width: 400px;
+    top: 15vh;
+    height: 70vh;
+    width: 50vw;
     left: 3%;
+    z-index: 1;
   }
   .About .second{
     visibility: visible;
-    background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624899187/skin_collective/amanda-dalbjorn-fvInY-Gh7sc-unsplash_xgxmym.jpg");
-    background-size: cover;
-    height: 400px;
-    width: 400px;
+    height: 40vh;
+    width: 50vw;
     right: 5%;
-    top: 425px;
+    top: 55vh;
   }
   .About .imgText{
-    z-index: 1;
-    width: 450px;
-    height: 450px;
-    top: 100px;
-    right: 3%;
+    z-index: 2;
+    width: 60vw;
+    height: 55vh;
+    left: 40%;
     background-color: rgba(47, 70, 85, .8);
     color: white;
+    top:10vh;
   }
   .About .imgText h4{
+    margin: 15px;
     color: white;
+  }
+  .About .imgText p{
+    font-size: calc(12px + 2vmin);
   }
   }
 @media (min-width: 800px){
-  .overlay Img{
-    padding-top: 100px;
-    width: 250px;
-    height: 350px;
-  }
-  .App-header button{
-    margin-bottom: 50px;
-  }
-  .imgText{
-    background-color: rgba(223, 230, 233, .7);
-    color: black;
-  }
   .About .first{
     left: 5%;
-    top: 10px;
-    width: 300px;
-    height: 350px;
+    top: 20px;
+    width: 40vw;
+    height: 90vh;
   }
   .About .imgText{
     top: 25px;
-    right: 5%;
-    width: 350px;
-    height: 300px;
+    left: 50%;
+    width: 40vw;
+    height: 80vh;
   }
   .About .imgText p{
-    font-size: calc(10px + 2vmin);
+    font-size: calc(10px + 1vmin);
   }
   .About .second{
     visibility: hidden;
   }
  }
-
-@media (min-width: 864px){
-  .About .first{
-    left: 5%;
-    width: 40%;
-    top: 25px;
-  }
-  .About .imgText{
-    right: 5%;
-    height: 425px;
-    top: 50px;
-  }
-  .About .imgText p{
-    font-size: calc(8px + 2vmin);
-  }
-  .About .second{
-    right: 15%;
-    top: 400px;
-  }
-}
 /* // [ lg ] Large devices (desktops, 992px and up) */
 @media (min-width: 900px) {
   .About .first{
-    top: 50px;
-    height: 600px;
-    width: 400px;
+    top: 10vh;
+    height: 80vh;
+    width: 40vw;
     left: 5%;
   }
   .About .second{
     visibility: visible;
     background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624899187/skin_collective/amanda-dalbjorn-fvInY-Gh7sc-unsplash_xgxmym.jpg");
     background-size: cover;
-    height: 400px;
-    width: 400px;
-    right: 20%;
-    top: 425px;
+    height: 50vh;
+    width: 50vw;
+    right: 15%;
+    top: 45vh;
   }
   .About .imgText{
     z-index: 1;
-    width: 450px;
-    height: 450px;
-    top: 100px;
-    right: 3%;
+    width: 50vw;
+    height: 45vh;
+    top: 15vh;
+    left:40%;
     background-color: rgba(47, 70, 85, .8);
     color: white;
   }
   .About .imgText h4{
     color: white;
+  }
+  .About .imgText p{
+    font-size: calc(12px + 1vmin);
+  }
+  .card{
+    font-size: larger;
   }
 }
  
-@media(min-width: 1000px){
-  .About .first{
-    top: 50px;
-    height: 650px;
-    width: 450px;
-    left: 10%;
-  }
-  .About .second{
-    visibility: visible;
-    background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624899187/skin_collective/amanda-dalbjorn-fvInY-Gh7sc-unsplash_xgxmym.jpg");
-    background-size: cover;
-    height: 450px;
-    width: 450px;
-    right: 15%;
-    top: 425px;
-  }
-  .About .imgText{
-    z-index: 1;
-    width: 500px;
-    height: 400px;
-    top: 100px;
-    right: 3%;
-    background-color: rgba(47, 70, 85, .8);
-    color: white;
-  }
-  .About .imgText h4{
-    color: white;
-  }
-}
+
 /* // [ xl ] Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1020px) { 
-  .About{
-    height: 130vh;
-  }
   .About .first{
-    top: 50px;
-    height: 700px;
-    width: 500px;
+    top: 10vh;
+    height: 70vh;
+    width: 50vw;
     left: 5%;
   }
   .About .second{
-    visibility: visible;
-    background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624899187/skin_collective/amanda-dalbjorn-fvInY-Gh7sc-unsplash_xgxmym.jpg");
-    background-size: cover;
-    height: 500px;
-    width: 500px;
-    right: 15%;
-    top: 425px;
+    height: 40vh;
+    width: 50vw;
+    right: 10%;
+    top: 45vh;
   }
   .About .imgText{
     z-index: 1;
-    width: 500px;
-    height: 450px;
-    top: 100px;
-    right: 3%;
-    background-color: rgba(47, 70, 85, .8);
-    color: white;
+    width: 55vw;
+    height: 40vh;
+    top: 15vh;
+    left:40%;
   }
   .About .imgText h4{
     color: white;
   }
+  .About .imgText p{
+    font-size: calc(10px + 2vmin);
   }
+  .card{
+    font-size: larger;
+  }
+}
 
+/* 
 @media(min-width: 1200px){
+  .About{
+    height: 150vh;
+  }
   .About .first{
     top: 50px;
     height: 650px;
@@ -595,8 +529,8 @@ body{
     visibility: visible;
     background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624899187/skin_collective/amanda-dalbjorn-fvInY-Gh7sc-unsplash_xgxmym.jpg");
     background-size: cover;
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     right: 20%;
     top: 425px;
   }
@@ -671,4 +605,4 @@ body{
   .About .imgText h4{
     color: white;
   }
-}
+} */

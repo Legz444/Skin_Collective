@@ -7,7 +7,7 @@ const Services = () =>{
     return(
         <>
         <div className="menu">
-            <h1>Services & Packages</h1>
+            <h3>Services & Packages</h3>
         <Accordion className="service_menu w-50 mx-auto">
             <Card className="card">
                 <Card.Header>
