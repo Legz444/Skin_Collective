@@ -8,7 +8,7 @@ import Services from './Components/Services';
 import Products from './Components/Products';
 import Contact from './Components/Contact';
 import Tegan from './Components/Tegan';
-
+import Photos from './Components/Carousel';
 
 function App() {
   return (
@@ -52,7 +52,10 @@ function App() {
           <Products/>
         </article>
         <article id="about" className="Tegan">
-          <Tegan/>
+          <ImgStack/>
+        </article>
+        <article className="carousel">
+          <Photos/>
         </article>
         <article id="contact" className="Contact">
           <Contact/>

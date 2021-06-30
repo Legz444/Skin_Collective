@@ -229,6 +229,9 @@ body{
   min-height: 100vh;
   background-color: rgb(223 230 233);
 }
+.About .p2{
+display: none;
+}
 .About .first{
   background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753629/skin_collective/pexels-cottonbro-4612151_xd68zg.jpg");
   background-size: cover;
@@ -246,8 +249,38 @@ body{
 }
 .About .imgText{
   color:rgb(22 38 46);
+
 }
-.About .p2{
+
+.Tegan{
+  min-height: 100vh;
+  background-color: rgb(223 230 233);
+}
+.Tegan .p1{
+  display: none;
+}
+
+.Tegan .first{
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753545/skin_collective/b80d9f29-766e-4440-96eb-6f92d6d2ee83_mrbivf.jpg");
+  background-size: cover;
+}
+.Tegan .second{
+  visibility: hidden;
+}
+.Tegan .imgText h4{
+  padding: 10px;
+  font-family: "Aubrey";
+  color: black;
+  text-align: center;
+}
+.Tegan .imgText{
+  color: black;
+}
+
+.carousel{
+  height: 100vh;
+}
+/* .About .p2{
   visibility: hidden;
 }
 
@@ -300,7 +333,7 @@ body{
   left: 5%;
   padding: 5px;
   z-index: 1;
-}
+} */
 
 /* #headshot{
   width: 150px;
@@ -338,6 +371,35 @@ body{
     padding-bottom: 5px;
     font-size: calc(8px + 2vmin);
     width: 80%;
+    margin: auto;
+  }
+  .Tegan{
+    background-color: rgb(223 230 233);
+    height: 150vh;
+  }
+  /* .Tegan img{
+    border: 1px solid black;
+  } */
+  .Tegan .first{
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624329767/skin_collective/tegan_wedding_havczl.jpg");
+  background-position: center;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 70vh;
+  }
+
+  .Tegan .imgText{
+    top: 69vh;
+    width: 90vw;
+    height: 90vh;
+    left: 5vw;
+  }
+  .Tegan .imgText p{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: calc(8px + 2vmin);
+    width: 85%;
     margin: auto;
   }
   .card h4{
@@ -421,7 +483,7 @@ body{
     color: white;
   }
   .About .imgText p{
-    font-size: calc(12px + 2vmin);
+    font-size: calc(12px + 1.5vmin);
   }
   }
 @media (min-width: 800px){
@@ -507,7 +569,7 @@ body{
     color: white;
   }
   .About .imgText p{
-    font-size: calc(10px + 2vmin);
+    font-size: calc(12px + 1vmin);
   }
   .card{
     font-size: larger;
