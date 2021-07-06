@@ -90,61 +90,6 @@ body{
   color: rgb(101 112 129);
 }
 
-
-/* .about_container{
-  width: 80%;
-  margin: auto;
-  position: relative;
-}
-.stack1{
-  position: absolute;
-  z-index: 1;
-  top: 180px;
-  left: 100px;
-}
-.stack2{
-  position: absolute;
-  left: 25%;
-  top: 50px;
-}
-.about_text{
-  font-family: 'Darker Grotesque', sans-serif;
-  position: absolute;
-  right: 60px;
-  top: 100px;
-  width:50%;
-  height: 400px;
-  padding: 50px;
-  background: rgba(47, 70, 85, .6);
-  text-align: center;
-  font-size: calc(8px + 2vmin);
-}
-.about_text h1{
-  font-family: 'Aubrey';
-}
-
-.socmed{
-  z-index: 1;
-} */
-/* .about_Tegan{
-  background-color: rgb(47 70 85);
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-family: "Aubrey";
-  color: rgb(223 230 233);
-}
-.Tegan_figure{
-  width: 50%;
-  padding: 10px;
-  font-family: 'Darker Grotesque', sans-serif;
-  font-size: calc(14px + 2vmin);
-  /* color: rgb(22 38 46) !important; */
-/* }
-.Tegan_text ul{
-  list-style-type: none;
-} */ 
 .Pictures{
   padding-top: 100px;
   order: 2;
@@ -252,96 +197,34 @@ display: none;
 }
 
 .Tegan{
-  min-height: 100vh;
   background-color: rgb(223 230 233);
 }
-.Tegan .p1{
-  display: none;
+
+.tegan_title{
+  text-align: center;
+  font-family: "Aubrey";
+  font-size: calc(12px + 2vmin)
+}
+.tegan_text{
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: calc(12px + 2vmin)
+}
+.tegan_text span{
+  text-align: center !important;
 }
 
-.Tegan .first{
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753545/skin_collective/b80d9f29-766e-4440-96eb-6f92d6d2ee83_mrbivf.jpg");
-  background-size: cover;
+.carousel{
+  background-color: rgb(223 230 233);
 }
-.Tegan .second{
-  visibility: hidden;
-}
-.Tegan .imgText h4{
-  padding: 10px;
-  font-family: "Aubrey";
-  color: black;
-  text-align: center;
-}
-.Tegan .imgText{
-  color: black;
-}
-.carousel h6{
+
+
+.carousel h5{
 font-family: "Darker Grotesque", sans-serif;
 }
 
 .carousel h2{
   font-family: "Aubrey";
 }
-/* .About .p2{
-  visibility: hidden;
-}
-
-
-.Tegan{
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624753545/skin_collective/76015ea3-e99e-41ad-8b40-c454a6468c88_l9rixi.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 130vh;
-
-}
-.Tegan .p1{
-  display: none;
-}
-.Tegan .second h2{
-  padding-top: 25px;
-  color: white;
-  font-family: "Aubrey";
-}
-.Tegan .second h4{
-  color: white;
-  font-family: 'Darker Grotesque', sans-serif;
-  padding-bottom: 25px;
-}
-.Tegan .imgText{
-  color: black;
-  position: absolute;
-  height: 75vh;
-  width: 300px;
-  padding: 25px;
-  left: 10%;
-  top: 250px;
-}
-.Tegan .first{
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624329767/skin_collective/tegan_wedding_havczl.jpg");
-  background-size: cover;
-  width: 150px;
-  height: 175px;
-  z-index: 2;
-  right: 5%;
-  top: 10px;
-}
-.Tegan .second{
-  position: absolute;
-  height: 150px;
-  width: 75vw;
-  background-color: rgb(47 70 85);
-  text-align: left;
-  top: 125px;
-  left: 5%;
-  padding: 5px;
-  z-index: 1;
-} */
-
-/* #headshot{
-  width: 150px;
-  height: 175px;
-  border: 1px solid black;
-} */
 
 
 
@@ -375,38 +258,7 @@ font-family: "Darker Grotesque", sans-serif;
     width: 80%;
     margin: auto;
   }
-  .Tegan{
-    background-color: rgb(223 230 233);
-    height: 150vh;
-  }
-  /* .Tegan img{
-    border: 1px solid black;
-  } */
-  .Tegan .first{
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624329767/skin_collective/tegan_wedding_havczl.jpg");
-  background-position: center;
-  top: 5vh;
-  left: 5vw;
-  width: 90vw;
-  height: 70vh;
-  }
 
-  .Tegan .imgText{
-    top: 69vh;
-    width: 90vw;
-    height: 90vh;
-    left: 5vw;
-  }
-  .Tegan .imgText p{
-    text-align: center;
-    padding-bottom: 5px;
-    font-size: calc(8px + 2vmin);
-    width: 85%;
-    margin: auto;
-  }
-  .card h4{
-    font-size: medium;
-  }
 }
 @media (min-width: 400px){
   .About .imgText p{
@@ -575,6 +427,9 @@ font-family: "Darker Grotesque", sans-serif;
   }
   .card{
     font-size: larger;
+  }
+  .tegan_card{
+    max-width: 75vw;
   }
 }
 

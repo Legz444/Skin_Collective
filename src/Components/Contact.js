@@ -20,7 +20,7 @@ const Contact = () => {
                 <Card.Text>
                 Boulder, CO
                 </Card.Text>
-                <Card.Link>Directions</Card.Link>
+                <Card.Link href="https://www.google.com/maps/place/2600+Canyon+Blvd,+Boulder,+CO+80302/@40.0171304,-105.2624122,17z/data=!3m1!4b1!4m5!3m4!1s0x876bedd160f07f49:0x158454605ea16e14!8m2!3d40.0171304!4d-105.2602235">Directions</Card.Link>
             </Card.Body>
         </Card>
             <Card style={{ width: '18rem' }}>
@@ -40,21 +40,15 @@ const Contact = () => {
                     <Form className="form_container">
                         <Form.Row>
                             <Col>
-                                
                                     <Form.Control placeholder="First name" />
-
                             </Col>
                             <Col>
-  
                                     <Form.Control placeholder="Last name" />
-                         
                             </Col>
                         </Form.Row>
                         <Form.Row>
                             <Col>
-                              
                                     <Form.Control as="textarea" placeholder="Message" rows="8"/>
-                             
                             </Col>
                         </Form.Row>
                     </Form>

@@ -2,7 +2,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import Navigate from './Components/Navigation';
-import About from './Components/About';
 import ImgStack from './Components/ImgStack';
 import Services from './Components/Services';
 import Products from './Components/Products';
@@ -52,7 +51,7 @@ function App() {
           <Products/>
         </article>
         <article id="about" className="Tegan">
-          <ImgStack/>
+          <Tegan/>
         </article>
         <article className="carousel">
           <Photos/>
