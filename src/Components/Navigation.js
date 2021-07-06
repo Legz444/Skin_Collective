@@ -20,10 +20,10 @@ const Navigate = () => {
             </Navbar.Brand>
             
             <Navbar.Text className="nav d-flex smicon">
-                <Nav.Link className="d-inline-block p-3">
+                <Nav.Link className="d-inline-block p-3" href="https://www.facebook.com/skincollectiveboulder">
                     <FiFacebook/>
                 </Nav.Link>
-                <Nav.Link className="d-inline-block p-3">
+                <Nav.Link className="d-inline-block p-3" href="https://instagram.com/skincollectiveboulder?utm_medium=copy_link">
                     <FaInstagram/>
                 </Nav.Link>
             </Navbar.Text>

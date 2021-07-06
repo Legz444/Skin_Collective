@@ -74,8 +74,8 @@ const Contact = () => {
                     <Card.Text>
                         Stay Connected for Updates, Deals and New Products.
                     </Card.Text>
-                    <Card.Link><FaInstagram/></Card.Link>
-                    <Card.Link><FiFacebook/></Card.Link>
+                    <Card.Link href="https://instagram.com/skincollectiveboulder?utm_medium=copy_link"><FaInstagram/></Card.Link>
+                    <Card.Link href="https://www.facebook.com/skincollectiveboulder"><FiFacebook/></Card.Link>
                 </Card.Body>
             </Card>
         </CardGroup>

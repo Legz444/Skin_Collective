@@ -153,8 +153,7 @@ body{
 }
 
 .menu{
-  /* background-color: rgb(223 230 233); */
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1624299958/skin_collective/white_texture_qdcqna.jpg");
+  background-color: rgb(223 230 233);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
@@ -276,9 +275,12 @@ display: none;
 .Tegan .imgText{
   color: black;
 }
+.carousel h6{
+font-family: "Darker Grotesque", sans-serif;
+}
 
-.carousel{
-  height: 100vh;
+.carousel h2{
+  font-family: "Aubrey";
 }
 /* .About .p2{
   visibility: hidden;
