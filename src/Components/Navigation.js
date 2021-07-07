@@ -33,8 +33,8 @@ const Navigate = () => {
                 <Nav.Link href="#about">About</Nav.Link>
                 <Nav.Link href="#services">Services & Packages</Nav.Link>
                 <Nav.Link href="#products">Products</Nav.Link>
-                <Nav.Link href="#testimonials">Testimonials</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link href="https://www.myaestheticspro.com/clientportal/dsp_loginportal.cfm?6C7A1A2C8B9ED7DBDF0D8A88769FF081">Log-In Patient Portal</Nav.Link>
                 
                 </Nav>
             </Navbar.Collapse>

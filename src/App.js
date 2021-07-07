@@ -35,7 +35,7 @@ function App() {
             height="400"
             alt="Skin Collective Logo"/>
         </div>
-        <Button className="button">Schedule Now</Button>
+        <Button className="button" href="https://www.myaestheticspro.com/booknow/index.cfm?6C7A1A2C8B9ED7DBDF0D8A88769FF081">Schedule Now</Button>
       </header>
       <body>
         <article className="mission">

@@ -10,8 +10,6 @@ const ImgStack = () => {
             <div className="first position-absolute">
             </div>
             <div className="second position-absolute">
-            <h2 className="p2">Tegan Ryan</h2>
-            <h4 className="p2">Founder & Lead Aesthetician</h4>
             </div>
             <div className="imgText position-absolute">
             <h4 className="p1">Welcome to Skin Collective</h4>
