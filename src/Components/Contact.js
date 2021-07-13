@@ -37,18 +37,18 @@ const Contact = () => {
                 <Modal.Title >Reach Out</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="Modal">
-                    <Form className="form_container">
+                    <Form className="form_container" action="https://formsubmit.co/boulderskincollective@gmail.com" method="POST">
                         <Form.Row>
                             <Col>
-                                    <Form.Control placeholder="First name" />
+                                    <Form.Control placeholder="First name" name="First Name" required/>
                             </Col>
                             <Col>
-                                    <Form.Control placeholder="Last name" />
+                                    <Form.Control placeholder="Last name" name="Last Name" required/>
                             </Col>
                         </Form.Row>
                         <Form.Row>
                             <Col>
-                                    <Form.Control as="textarea" placeholder="Message" rows="8"/>
+                                    <Form.Control as="textarea" placeholder="Message" rows="8" name="Message" required/>
                             </Col>
                         </Form.Row>
                     </Form>
