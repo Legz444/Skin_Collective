@@ -20,9 +20,6 @@ const Services = () =>{
                     <h4>HydraFacial</h4>
                     <h5>$170</h5>
 
-                    <h4>Express HydraFacial (30/45 min, no fluff)</h4>
-                    <h5>$150</h5>
-
                     <h4>Fire and Ice Facial</h4>
                     <h5>$99</h5>
 

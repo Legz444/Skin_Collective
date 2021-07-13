@@ -5,7 +5,7 @@ const Tegan = () => {
     return(
         <div className="about_Tegan">
             <Card className="mx-auto tegan_card">
-                <Card.Img variant="top" src="https://res.cloudinary.com/legz444/image/upload/v1624329767/skin_collective/tegan_wedding_havczl.jpg" className="p-5"></Card.Img>
+                <Card.Img variant="top" src="https://res.cloudinary.com/legz444/image/upload/v1626195743/skin_collective/Teganbw-1_mgae6i.jpg" className="p-5"></Card.Img>
                 <Card.Body>
                 <Card.Title className="tegan_title">Tegan Ryan</Card.Title>
                 <Card.Subtitle className="tegan_title p-2">Founder and Lead Aesthetician</Card.Subtitle>

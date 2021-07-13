@@ -37,7 +37,7 @@ const Contact = () => {
                 <Modal.Title >Reach Out</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="Modal">
-                    <Form className="form_container" action="https://formsubmit.co/boulderskincollective@gmail.com" method="POST">
+                    <Form className="form_container" method="POST" action="https://formsubmit.co/boulderskincollective@gmail.com" >
                         <Form.Row>
                             <Col>
                                     <Form.Control placeholder="First name" name="First Name" required/>
@@ -46,21 +46,20 @@ const Contact = () => {
                                     <Form.Control placeholder="Last name" name="Last Name" required/>
                             </Col>
                         </Form.Row>
+                        <Form.Row><Col><Form.Control type="email" placeholder="Email Address" name="email"></Form.Control></Col></Form.Row>
                         <Form.Row>
                             <Col>
                                     <Form.Control as="textarea" placeholder="Message" rows="8" name="Message" required/>
                             </Col>
                         </Form.Row>
+                        <Button className="button" onClick={handleClose}>
+                            Close
+                        </Button>
+                        <Button className="button" type="submit" onClick={handleClose}>
+                            Send Message
+                        </Button>
                     </Form>
                 </Modal.Body>
-                <Modal.Footer className="Modal">
-                <Button className="button" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button className="button" onClick={handleClose}>
-                    Send Message
-                </Button>
-                </Modal.Footer>
             </Modal>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>

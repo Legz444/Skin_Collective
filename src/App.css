@@ -43,6 +43,7 @@ body{
   border: none !important;
   margin-top: 25px;
   font-family: "Aubrey";
+  padding-right: 5px;
 }
 
 .smicon{
@@ -226,8 +227,14 @@ font-family: "Darker Grotesque", sans-serif;
   font-family: "Aubrey";
 }
 
-
-
+footer{
+  padding-top: 50px;
+  background-color: rgb(223 230 233);
+}
+footer p{
+  text-align: center;
+  font-size: xx-small;
+}
 
 /* Media queries */
 

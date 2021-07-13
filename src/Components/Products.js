@@ -40,7 +40,7 @@ const Products = () => {
                 width={100}
                 height={100}
                 alt="250x250"
-                src="https://res.cloudinary.com/legz444/image/upload/v1624384083/skin_collective/iSC_Logo_t7qjfy.png"
+                src="https://res.cloudinary.com/legz444/image/upload/v1624384077/skin_collective/elta_logo_gwtzur.svg"
             />
         </Figure>
         <Figure className="product-fig p-3">
@@ -48,7 +48,7 @@ const Products = () => {
                 width={100}
                 height={100}
                 alt="250x250"
-                src="https://res.cloudinary.com/legz444/image/upload/v1624384077/skin_collective/elta_logo_gwtzur.svg"
+                src="https://res.cloudinary.com/legz444/image/upload/v1626197471/skin_collective/iS_Clinical_Logo_1600x_k4ntrv.png"
             />
         </Figure>
         <Figure className="product_fig p-3">
@@ -56,7 +56,15 @@ const Products = () => {
                 width={100}
                 height={100}
                 alt="250x250"
-                src="https://res.cloudinary.com/legz444/image/upload/v1624384073/skin_collective/IT-LOGO-New-color-pdf_cdu5ui.jpg"
+                src="https://res.cloudinary.com/legz444/image/upload/v1626197617/skin_collective/induction_therapies_c5yb66.jpg"
+            />
+        </Figure>
+        <Figure className="product_fig p-3">
+            <Figure.Image
+                width={100}
+                height={100}
+                alt="250x250"
+                src="https://res.cloudinary.com/legz444/image/upload/v1626197382/skin_collective/glytone_wxbbjd.jpg"
             />
         </Figure>
       </div>
