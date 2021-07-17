@@ -14,15 +14,6 @@ function App() {
     <>
     <div className="App">
       <title>Skin Collective</title>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-        crossorigin="anonymous"
-      />
-      <link rel="preconnect" href="https://fonts.gstatic.com"/>
-      <link href="https://fonts.googleapis.com/css2?family=Fjord+One&display=swap" rel="stylesheet"></link>
-      <link href="//db.onlinewebfonts.com/c/f109f08852742e27f747f260abdf6fb8?family=Aubrey" rel="stylesheet" type="text/css"/>
       <nav className="navigate">
         <Navigate/>
       </nav>
