@@ -51,7 +51,7 @@ function App() {
           <Contact/>
         </article>
         <footer>
-          <p className="creator">This website was developed by Allegra Hilburger © <br></br>allegraSE@protonmail.com</p>
+          <p className="creator">This Website was developed by Allegra Hilburger © <br></br>allegraSE@protonmail.com</p>
         </footer>
       </body>
     </div>

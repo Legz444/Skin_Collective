@@ -53,7 +53,7 @@ body{
 
 .App-header {
   background-color: rgb(22 38 46);
-  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1627919448/skin_collective/41bf88cd-7880-4bb1-9644-f356529eb003_zceowy.jpg");
+  background-image: url("https://res.cloudinary.com/legz444/image/upload/v1623347383/skin_collective/content-pixie-j1WYUNgLbOk-unsplash_ui0pxv.jpg");
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -63,6 +63,7 @@ body{
   font-size: calc(10px + 2vmin);
   color: rgb(47 70 85);
   vertical-align: top;
+  text-shadow: 2px 2px white;
 
 }
 .overlay Img{
@@ -307,9 +308,6 @@ footer p{
   }
   .About .imgText p{
     font-size: calc(8px + 2vmin);
-  }
-  .tegan_card{
-    max-width: 75%;
   }
 }
 /* // [ md ] Medium devices (tablets, 768px and up) */
