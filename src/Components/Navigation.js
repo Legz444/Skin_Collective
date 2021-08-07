@@ -23,7 +23,7 @@ const Navigate = () => {
                 <Nav.Link className="d-inline-block p-3" href="https://www.facebook.com/skincollectiveboulder">
                     <FiFacebook/>
                 </Nav.Link>
-                <Nav.Link className="d-inline-block p-3" href="https://instagram.com/skincollectiveboulder?utm_medium=copy_link">
+                <Nav.Link className="d-inline-block p-3" href="https://www.instagram.com/boulderskincollective/">
                     <FaInstagram/>
                 </Nav.Link>
             </Navbar.Text>
