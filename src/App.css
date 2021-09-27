@@ -44,6 +44,7 @@ body{
   margin-top: 25px;
   font-family: "Aubrey";
   padding-right: 5px;
+  font-size: 1.5em !important;
 }
 
 .smicon{
@@ -106,6 +107,9 @@ body{
   text-align: center;
   color: rgb(223 230 233);
   font-family: "Darker Grotesque", sans-serif;
+}
+.accordion_title{
+  font-size: 1.5em !important;
 }
 .menu h3{
   color:rgb(47, 70, 85);
