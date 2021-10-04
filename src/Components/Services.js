@@ -23,7 +23,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$99-$115</h5>
                         <Accordion.Collapse eventKey="01">
-                            <h5>Description</h5>
+                            <h5>Not sure what your skin needs? Let your aesthetician choose after thoroughly evaluating your skin. </h5>
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="02">
@@ -31,7 +31,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$115</h5>
                         <Accordion.Collapse eventKey="02">
-                            <h5>Description</h5>
+                            <h5>This IS Clinical facial is designed to safely resurface and rapidly rejuvenate the skin by using a retinol niacinamide mask followed by a hydrating hyaluronic acid mask. Great for anyone looking to reduce the appearance of fine lines and wrinkles while improving the appearance of uneven skin tone. * Little to no down time</h5>
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="03">
@@ -39,7 +39,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$170</h5>
                         <Accordion.Collapse eventKey="03">
-                            <h5>Description</h5>
+                            <h5>The sought-after HydraFacial uses patented technology to cleanse, extract, and hydrate. First, uncover a new layer of skin with gentle exfoliation and relaxing resurfacing. Then Dead skin and oil is painlessly extracted using the HydraFacial vortex-fusion technology. After your skin is exfoliated and clean, the skin is saturated in HydraFacial super serums filled with antioxidants peptides. * Little to no downtime</h5>
                         </Accordion.Collapse>
                         
                         <Accordion.Toggle as={Button} variant="link" eventKey="04">
@@ -47,23 +47,16 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$299</h5>
                         <Accordion.Collapse eventKey="04">
-                            <h5>Description</h5>
+                            <h5>Microneedling produces results through the stimulation of growth factors and collagen, thereby promoting new skin cells to surface. This treatment is great for softening fine lines and wrinkles, large pores, and acne scars. Best results are seen after a series of 3 or 6, each treatment spaced 4 weeks apart (discuss with your aestehtican what is best for you). Results are seen as soon at 2 weeks after your first treatment however new collagen and elastin formation in the skin are documented visibly and measurably as much as one year after just one treatment! * 5-7 days downtime</h5>
                         </Accordion.Collapse>
                         
                         <Accordion.Toggle as={Button} variant="link" eventKey="05">
                             <h4>Dermaplane</h4>  
                         </Accordion.Toggle>
                             <h5>$60</h5>
+                            <h5>Add-on: $40</h5>
                         <Accordion.Collapse eventKey="05">
-                            <h5>Description</h5>
-                        </Accordion.Collapse>
-
-                        <Accordion.Toggle as={Button} variant="link" eventKey="06">
-                            <h4>Dermaplane Add-On</h4>
-                        </Accordion.Toggle>
-                            <h5>$40</h5>
-                        <Accordion.Collapse eventKey="06">
-                            <h5>Description</h5>
+                            <h5>A sterile surgical blade is used to removes the top layer of dead skin and vellus hair (peach fuzz). Wonderful exfoliating treatment alone but is an excellent add on service to any facial because it enhances the penetration of any products applied after. * No down time</h5>
                         </Accordion.Collapse>
                         
                         <Accordion.Toggle as={Button} variant="link" eventKey="07">
@@ -71,7 +64,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$60</h5>
                         <Accordion.Collapse eventKey="07">
-                            <h5>Description</h5>
+                            <h5>Extractions are Included in every facial but if you only have concerns about specific blackheads, white heads or stubborn milia this is a great option for them to skillfully be extracted.</h5>
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="08">
@@ -95,7 +88,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$60</h5>
                         <Accordion.Collapse eventKey="010">
-                            <h5>Description</h5>
+                            <h5>This facial is great for anyone ages 10 to 17. A custom facial is discussed and performed, this facial is very focused on educating teens about their skin and skin care. If there is significant acne, a full acne facial may be necessary. * No downtime</h5>
                         </Accordion.Collapse>
                     </Accordion>
                 </Card.Body>
