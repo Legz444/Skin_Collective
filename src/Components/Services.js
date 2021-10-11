@@ -72,7 +72,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$99</h5>
                         <Accordion.Collapse eventKey="08">
-                            <h5>Description</h5>
+                            <h5>Your aesthetician will choose the correct  superficial peel for you based on your skin and skin care concern. The peel consists  of an Alpha-hydroxy acid or another mild acid and is used to penetrate only the outer layer of skin to gently exfoliate it. The treatment is used to improve the appearance of mild skin discoloration and rough skin as well. * Little  to no downtime</h5>
                         </Accordion.Collapse>
                         
                         <Accordion.Toggle as={Button} variant="link" eventKey="09">
@@ -80,7 +80,7 @@ const Services = () =>{
                         </Accordion.Toggle>
                             <h5>$150</h5>
                         <Accordion.Collapse eventKey="09">
-                            <h5>Description</h5>
+                            <h5>The Perfect Peel is applied to penetrate the outer and middle layers of skin to remove damaged skin cells followed by an All-Trans-Retinol Complex. The treatment is used to improve age spots, fine lines and wrinkles, freckles and moderate skin discoloration. It also can be used to smooth rough skin. * 3-7 days downtime</h5>
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="010">
@@ -107,57 +107,30 @@ const Services = () =>{
                             <h4>Lash Tint</h4>
                         </Accordion.Toggle>
                             <h5>$25</h5>
+                            <h5>Add-on: $15</h5>
                         <Accordion.Collapse eventKey="11">
-                            <h5>Description</h5>
+                            <h5>Tinting is a safe way to temporarily dye the eyelashes or eyebrows. Results vary and last 3-6 weeks.</h5>
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="12">
                             <h4>Brow Tint</h4>
                         </Accordion.Toggle>
                             <h5>$15</h5>
+                            <h5>Add-on: $10</h5>
                         <Accordion.Collapse eventKey="12">
-                            <h5>Description</h5>
-                        </Accordion.Collapse>
-
-                        <Accordion.Toggle as={Button} variant="link" eventKey="13">
-                            <h4>Brow and Lash</h4>
-                        </Accordion.Toggle>
-                            <h5>$30</h5>
-                        <Accordion.Collapse eventKey="13">
-                            <h5>Description</h5>
-                        </Accordion.Collapse>
-
-                        <Accordion.Toggle as={Button} variant="link" eventKey="14">
-                            <h4>Add-On Lash Tint</h4>
-                        </Accordion.Toggle>
-                            <h5>$15</h5>
-                        <Accordion.Collapse eventKey="14">
-                            <h5>Description</h5>
+                            <h5>Tinting is a safe way to temporarily dye the eyelashes or eyebrows. Results vary and last 3-6 weeks.</h5>
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="15">
-                            <h4>Add-On Brow Tint</h4>
+                            <h4>Brow and Lash</h4>
                         </Accordion.Toggle>
-                            <h5>$10</h5>
-                        <Accordion.Collapse eventKey="15">
-                            <h5>Description</h5>
-                        </Accordion.Collapse>
+                            <h5>$30</h5>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="16">
                             <h4>Brow Wax</h4>
                         </Accordion.Toggle>
                             <h5>$15</h5>
-                        <Accordion.Collapse eventKey="16">
-                            <h5>Description</h5>
-                        </Accordion.Collapse>
-
-                        <Accordion.Toggle as={Button} variant="link" eventKey="17">
-                            <h4>Add-On Brow Wax</h4>
-                        </Accordion.Toggle>
-                            <h5>$5</h5>
-                        <Accordion.Collapse eventKey="17">
-                            <h5>Description</h5>
-                        </Accordion.Collapse>
+                            <h5>Add-on: $5</h5>
                     </Accordion>
                 </Card.Body>
                 </Accordion.Collapse>
