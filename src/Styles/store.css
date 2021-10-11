@@ -1,0 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/aubrey');
+
+@font-face {
+  font-family: "Aubrey"; 
+  src: url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.eot"); 
+  src: url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.eot?#iefix") 
+  format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.woff") format("woff"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f109f08852742e27f747f260abdf6fb8.svg#Aubrey") format("svg"); 
+}
+  *::after,
+  *::before{
+      margin: 0;
+      padding: 0%;
+      box-sizing: inherit;
+  }
+  body{
+  font-size: 10;
+  }
+  body {
+     box-sizing: border-box;
+      }
+
+body{
+    background-image: url("https://res.cloudinary.com/legz444/image/upload/v1627919448/skin_collective/41bf88cd-7880-4bb1-9644-f356529eb003_zceowy.jpg");
+    background-repeat: none;
+    background-size: cover;
+    font-family: 'Aubrey';
+    text-align: center;
+    margin-top: 50vh;
+}

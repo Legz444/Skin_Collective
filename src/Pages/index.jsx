@@ -1,5 +1,6 @@
 import React from 'react';
-
+import '../Styles/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import Navigate from '../Components/Navigation';
 import ImgStack from '../Components/ImgStack';

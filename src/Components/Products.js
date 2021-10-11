@@ -64,7 +64,7 @@ const Products = () => {
                 width={100}
                 height={100}
                 alt="250x250"
-                src="https://res.cloudinary.com/legz444/image/upload/v1626197382/skin_collective/glytone_wxbbjd.jpg"
+                src="https://res.cloudinary.com/legz444/image/upload/v1633966363/skin_collective/Glytone_Logo_-_No_background_cvwrzl.png"
             />
         </Figure>
       </div>

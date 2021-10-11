@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Route, Link, Switch, Redirect} from 'react-router-dom';
-import Main from './Pages/index.jsx';
 
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Main from './Pages/index';
+import Store from './Pages/store';
 class App extends Component {
   render(){
     return(
       <Router>
        {/*All our Routes goes here!*/}
-       <Route path="/" component={Main} />
+       <Route exact path="/" component={Main} />
+       <Route path="/store" component={Store} />
       </Router>
     );
   }
