@@ -56,7 +56,7 @@ const Products = () => {
                 width={100}
                 height={100}
                 alt="250x250"
-                src="https://res.cloudinary.com/legz444/image/upload/v1626197617/skin_collective/induction_therapies_c5yb66.jpg"
+                src="https://res.cloudinary.com/legz444/image/upload/v1634658299/skin_collective/Collagen_PIN_logo_Final-01_jbld9v.png"
             />
         </Figure>
         <Figure className="product_fig p-3">
