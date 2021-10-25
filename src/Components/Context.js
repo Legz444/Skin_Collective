@@ -1,14 +1,12 @@
-require('dotenv').config();
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Client from 'shopify-buy';
 
-const Token = process.env.AccessToken;
 const ShopContext = React.createContext();
 
 const client = Client.buildClient({
-    domain: 'boulder-skin-collective.myshopify.com',
-    storefrontAccessToken: Token
-})
+    storefrontAccessToken: '76075e096f7f7e0a8387f361d6aa44a5',
+    domain: 'boulder-skin-collective.myshopify.com'
+  });
 
 class ShopProvider extends Component {
 // create initial state. we want to hold the products which come in as an array of objects. We need to hold the single product, when viewing it, which comes in as an object. We need a checkout cart for every individual user. And we want the cart to open when a user adds the product to the checkout.
@@ -16,13 +14,12 @@ class ShopProvider extends Component {
         products: [],
         product: {},
         checkout: {},
-        isCartOpen: false,
-        test: 'test'
+        isCartOpen: false
     } 
 
     render() {
         return(
-            <ShopContext.Provider value={[...this.state]}>
+            <ShopContext.Provider value={{...this.state}}>
             {this.props.children}
             </ShopContext.Provider>
         )
