@@ -5,7 +5,7 @@ import {Button} from 'react-bootstrap';
 import Navigate from '../Components/Navigation';
 import ImgStack from '../Components/ImgStack';
 import Services from '../Components/Services';
-import Products from '../Components/Products';
+import ProductIcons from '../Components/ProductIcons';
 import Contact from '../Components/Contact';
 import Tegan from '../Components/Tegan';
 import Photos from '../Components/Carousel';
@@ -53,7 +53,7 @@ const Main = () => {
             <Services/>
             </article>
             <article id="products" className="Products">
-            <Products/>
+            <ProductIcons/>
             </article>
             <article id="about" className="Tegan">
             <Tegan/>

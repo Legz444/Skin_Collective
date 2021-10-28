@@ -1,35 +1,35 @@
-import React from 'react';
+import React, { Component} from 'react';
 import './Styles/App.css';
-import { Provider as StyletronProvider, DebugEngine } from "styletron-react";
-import { Client as Styletron } from "styletron-engine-atomic";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import ShopProvider from './Components/Context';
+// import ShopProvider from './Components/Context';
 
 import Main from './Pages/index';
 import Store from './Pages/store';
-import Product from './Pages/product';
+// import Product from './Pages/product';
+import Client from 'shopify-buy';
 
-const debug =
-  process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
-const engine = new Styletron();
+const client = Client.buildClient({
+  storefrontAccessToken: '76075e096f7f7e0a8387f361d6aa44a5',
+  domain: 'boulder-skin-collective.myshopify.com'
+});
 
-const App = () => {
-    return(
-      <ShopProvider>
-        <StyletronProvider value={engine} debug={debug} debugAfterHydration>
-          <Router>
+class App extends Component{
 
-            <Route path="/store">
-              <Store/>
-            </Route>
-            <Route exact path="/">
-              <Main/>
-            </Route>
-          </Router>
-        </StyletronProvider>
-      </ShopProvider>
-      
-    );
+    render(props){
+      return(
+        // <ShopProvider>
+            <Router>
+              <Route path="/store">
+                <Store client={client}/>
+              </Route>
+              <Route exact path="/">
+                <Main/>
+              </Route>
+            </Router>
+        // </ShopProvider>
+        
+      );
+    } 
 }
 export default App;
 
