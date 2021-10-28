@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import '../Styles/store.css';
 import Products from '../Components/Products';
-import { timers } from 'jquery';
-// import ShopContext from '../Components/Context';
+import "bootstrap/dist/css/bootstrap.min.css";
+import{ Navbar, Nav} from 'react-bootstrap';
+import {FaInstagram} from 'react-icons/fa';
+import {FiFacebook} from 'react-icons/fi';
+import {Link} from 'react-router-dom';
 
 
 
@@ -99,16 +102,41 @@ removeLineItemsInCart(lineItemId){
 
     render() {
         return (
-        <div className="Store">
-            <header className="Store__header">   
-            </header>
-            <body>
+        <div className="store">
+            <Navbar collapseOnSelect expand={false} bg="light" variant="light" className="navbar" fixed="top">
+            <Navbar.Brand href="#home">
+                <img 
+                src="https://res.cloudinary.com/legz444/image/upload/v1624299955/skin_collective/primary_logo_sgdmn6.png" 
+                width="80"
+                height="80"
+                className="d-inline-block align-top"
+                alt="Skin Collective Logo"
+                />
+            </Navbar.Brand>
+            
+            <Navbar.Text className="nav d-flex smicon">
+                <Nav.Link className="d-inline-block p-3" href="https://www.facebook.com/skincollectiveboulder">
+                    <FiFacebook/>
+                </Nav.Link>
+                <Nav.Link className="d-inline-block p-3" href="https://www.instagram.com/boulderskincollective/">
+                    <FaInstagram/>
+                </Nav.Link>
+            </Navbar.Text>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mr-auto">
+                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Link to="/">Home</Link>
+                </Nav>
+            </Navbar.Collapse>
+            </Navbar>
+            <div className="products_container">
             <Products
                 products={this.state.products}
                 client={this.props.client}
                 addVariantToCart={this.addItemToCart}
         />
-            </body>
+            </div>
         </div>
         );
     }   
