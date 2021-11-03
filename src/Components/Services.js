@@ -35,59 +35,75 @@ const Services = () =>{
                         </Accordion.Collapse>
 
                         <Accordion.Toggle as={Button} variant="link" eventKey="03">
-                            <h4>HydraFacial</h4>
+                            <h4>Express HydraFacial</h4>
                         </Accordion.Toggle>
                             <h5>$170</h5>
                         <Accordion.Collapse eventKey="03">
-                            <h5>The sought-after HydraFacial uses patented technology to cleanse, extract, and hydrate. First, uncover a new layer of skin with gentle exfoliation and relaxing resurfacing. Then Dead skin and oil is painlessly extracted using the HydraFacial vortex-fusion technology. After your skin is exfoliated and clean, the skin is saturated in HydraFacial super serums filled with antioxidants peptides. * Little to no downtime</h5>
+                            <h5>Deeply cleanses, exfoliates, and hydrates with Hydrafacials patented resurfacing serums and vortrex technology delivery system. </h5>
                         </Accordion.Collapse>
-                        
+
                         <Accordion.Toggle as={Button} variant="link" eventKey="04">
+                            <h4>Deluxe HydraFacial</h4>
+                        </Accordion.Toggle>
+                            <h5>$220</h5>
+                        <Accordion.Collapse eventKey="04">
+                            <h5>Deeply cleanses, exfoliates, and hydrates, while addressing specific skin concerns with the personalized booster of your choice (brightening Complex or Dermabuilder), Red light is used to penetrate the serums and booster deeper into the skin. One Hydrafacial treatment with a booster is the equivalent to using a special treatment serum for 3 weeks!</h5>
+                        </Accordion.Collapse>
+
+                        <Accordion.Toggle as={Button} variant="link" eventKey="05">
+                            <h4>Platinum HydraFacial</h4>
+                        </Accordion.Toggle>
+                            <h5>$280</h5>
+                        <Accordion.Collapse eventKey="05">
+                            <h5>Before diving into the Hydrafacial cleansing, exfoliating, and hydrating serums, facial lymphatic drainage is performed. The Hydrafacial ReGen Growth Factor is applied , diminishing fines lines and enhancing the appearance of firmness. </h5>
+                        </Accordion.Collapse>
+
+                        <Accordion.Toggle as={Button} variant="link" eventKey="06">
                             <h4>Microneedling</h4>
                         </Accordion.Toggle>
                             <h5>$299</h5>
-                        <Accordion.Collapse eventKey="04">
+                        <Accordion.Collapse eventKey="06">
                             <h5>Microneedling produces results through the stimulation of growth factors and collagen, thereby promoting new skin cells to surface. This treatment is great for softening fine lines and wrinkles, large pores, and acne scars. Best results are seen after a series of 3 or 6, each treatment spaced 4 weeks apart (discuss with your aestehtican what is best for you). Results are seen as soon at 2 weeks after your first treatment however new collagen and elastin formation in the skin are documented visibly and measurably as much as one year after just one treatment! * 5-7 days downtime</h5>
                         </Accordion.Collapse>
                         
-                        <Accordion.Toggle as={Button} variant="link" eventKey="05">
+                        <Accordion.Toggle as={Button} variant="link" eventKey="07">
                             <h4>Dermaplane</h4>  
                         </Accordion.Toggle>
                             <h5>$60</h5>
                             <h5>Add-on: $40</h5>
-                        <Accordion.Collapse eventKey="05">
+                        <Accordion.Collapse eventKey="07">
                             <h5>A sterile surgical blade is used to removes the top layer of dead skin and vellus hair (peach fuzz). Wonderful exfoliating treatment alone but is an excellent add on service to any facial because it enhances the penetration of any products applied after. * No down time</h5>
                         </Accordion.Collapse>
                         
-                        <Accordion.Toggle as={Button} variant="link" eventKey="07">
+                        <Accordion.Toggle as={Button} variant="link" eventKey="08">
                             <h4>Extractions</h4>
                         </Accordion.Toggle>
                             <h5>$60</h5>
-                        <Accordion.Collapse eventKey="07">
+                        <Accordion.Collapse eventKey="08">
                             <h5>Extractions are Included in every facial but if you only have concerns about specific blackheads, white heads or stubborn milia this is a great option for them to skillfully be extracted.</h5>
                         </Accordion.Collapse>
 
-                        <Accordion.Toggle as={Button} variant="link" eventKey="08">
+                        <Accordion.Toggle as={Button} variant="link" eventKey="09">
                             <h4>Chemical peel</h4>
                         </Accordion.Toggle>
                             <h5>$99</h5>
-                        <Accordion.Collapse eventKey="08">
+                        <Accordion.Collapse eventKey="09">
                             <h5>Your aesthetician will choose the correct  superficial peel for you based on your skin and skin care concern. The peel consists  of an Alpha-hydroxy acid or another mild acid and is used to penetrate only the outer layer of skin to gently exfoliate it. The treatment is used to improve the appearance of mild skin discoloration and rough skin as well. * Little  to no downtime</h5>
                         </Accordion.Collapse>
                         
-                        <Accordion.Toggle as={Button} variant="link" eventKey="09">
+                        <Accordion.Toggle as={Button} variant="link" eventKey="010">
                             <h4>Advanced Chemical Peel</h4>
                         </Accordion.Toggle>
                             <h5>$150</h5>
-                        <Accordion.Collapse eventKey="09">
+                        <Accordion.Collapse eventKey="010">
                             <h5>The Perfect Peel is applied to penetrate the outer and middle layers of skin to remove damaged skin cells followed by an All-Trans-Retinol Complex. The treatment is used to improve age spots, fine lines and wrinkles, freckles and moderate skin discoloration. It also can be used to smooth rough skin. * 3-7 days downtime</h5>
                         </Accordion.Collapse>
 
-                        <Accordion.Toggle as={Button} variant="link" eventKey="010">
+                        <Accordion.Toggle as={Button} variant="link" eventKey="011">
                             <h4>Teen Facial</h4>
                         </Accordion.Toggle>
                             <h5>$60</h5>
-                        <Accordion.Collapse eventKey="010">
+                        <Accordion.Collapse eventKey="011">
                             <h5>This facial is great for anyone ages 10 to 17. A custom facial is discussed and performed, this facial is very focused on educating teens about their skin and skin care. If there is significant acne, a full acne facial may be necessary. * No downtime</h5>
                         </Accordion.Collapse>
                     </Accordion>

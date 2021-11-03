@@ -23,4 +23,28 @@ body{
     font-family: 'Aubrey';
 }
 
+.store{
+  width: 100vw;
+  display: flex;
+}
+.sidebar{
+  margin-top: 100px;
+  width: 30vw;
+  height: 100%;
+  background-color: blue;
+}
+.product_grid{
+  margin-top: 100px;
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+.product{
+  border: solid blue 1px;
+}
+.product_img{
+  width: 200px;
+  height: 200px;
+}
 

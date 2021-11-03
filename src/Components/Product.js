@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import VariantSelector from './VariantSelector';
+// import VariantSelector from './VariantSelector';
 
 class Product extends Component {
   constructor(props) {
@@ -59,15 +59,15 @@ class Product extends Component {
     //   );
     // });
     return (
-      <div className="Product">
-        {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
-        <h5 className="Product__title">{this.props.product.title}</h5>
-        <span className="Product__price">${variant.price}</span>
-        <label className="Product__option">
+      <div className="product">
+        {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`} className="product_img"/> : null}
+        <h5 className="product__title">{this.props.product.title}</h5>
+        <span className="product__price">${variant.price}</span>
+        <label className="product__option">
           Quantity
           <input min="1" type="number" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
         </label>
-        <button className="Product__buy button" onClick={() => this.props.addVariantToCart(variant.id, variantQuantity)}>Add to Cart</button>
+        <button className="product__buy button" onClick={() => this.props.addItemToCart(variant.id, variantQuantity)}>Add to Cart</button>
       </div>
     );
   }

@@ -15,7 +15,7 @@ const client = Client.buildClient({
 
 class App extends Component{
 
-    render(props){
+    render(){
       return(
         // <ShopProvider>
             <Router>

@@ -48,7 +48,7 @@ const ProductIcons = () => {
                 width={100}
                 height={100}
                 alt="250x250"
-                src="https://res.cloudinary.com/legz444/image/upload/v1626197471/skin_collective/iS_Clinical_Logo_1600x_k4ntrv.png"
+                src="https://res.cloudinary.com/legz444/image/upload/v1635616363/skin_collective/iS_Logo_Blue_2021_1_genwii.png"
             />
         </Figure>
         <Figure className="product_fig p-3">

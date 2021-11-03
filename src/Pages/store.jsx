@@ -6,6 +6,7 @@ import{ Navbar, Nav} from 'react-bootstrap';
 import {FaInstagram} from 'react-icons/fa';
 import {FiFacebook} from 'react-icons/fi';
 import {Link} from 'react-router-dom';
+import Cart from '../Components/Cart';
 
 
 
@@ -26,7 +27,7 @@ class Store extends Component {
   this.handleCartClose = this.handleCartClose.bind(this);
   this.addItemToCart = this.addItemToCart.bind(this);
   this.updateQuantityInCart = this.updateQuantityInCart.bind(this);
-  this.removeLineItemsInCart = this.removeLineItemsInCart.bind(this); 
+  this.removeLineItemInCart = this.removeLineItemInCart.bind(this); 
 }
 
   // create functions
@@ -61,9 +62,9 @@ class Store extends Component {
       isCartOpen: true
     });
     const lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]
-    const checkoutId = this.state.checkout.variantId
+    const checkoutId = this.state.checkout.id
 
-    return this.props.cient.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {
+    return this.props.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {
       this.setState({
         checkout: res
       });
@@ -82,7 +83,7 @@ class Store extends Component {
     });
   }
 // remove items Items from Cart
-removeLineItemsInCart(lineItemId){
+removeLineItemInCart(lineItemId){
   const checkoutId = this.state.checkout.id
 
   return this.props.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {
@@ -101,7 +102,9 @@ removeLineItemsInCart(lineItemId){
     // }, [fetchAllProduct]);
 
     render() {
+        console.log(this.state.products);
         return (
+        <>
         <div className="store">
             <Navbar collapseOnSelect expand={false} bg="light" variant="light" className="navbar" fixed="top">
             <Navbar.Brand href="#home">
@@ -130,14 +133,23 @@ removeLineItemsInCart(lineItemId){
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
-            <div className="products_container">
+            <div className="sidebar">
+                <h1>Collections</h1>  
+            </div>
             <Products
                 products={this.state.products}
                 client={this.props.client}
-                addVariantToCart={this.addItemToCart}
-        />
-            </div>
+                addItemToCart={this.addItemToCart}
+            />
+            <Cart
+                checkout={this.state.checkout}
+                isCartOpen={this.state.isCartOpen}
+                handleCartClose={this.handleCartClose}
+                updateQuantityInCart={this.updateQuantityInCart}
+                removeLineItemInCart={this.removeLineItemInCart}
+            />
         </div>
+        </>
         );
     }   
 }
