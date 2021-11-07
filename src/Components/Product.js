@@ -60,14 +60,19 @@ class Product extends Component {
     // });
     return (
       <div className="product">
-        {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`} className="product_img"/> : null}
-        <h5 className="product__title">{this.props.product.title}</h5>
-        <span className="product__price">${variant.price}</span>
-        <label className="product__option">
-          Quantity
+        <div className="img_container">
+          {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`} className="product_img"/> : null}
+          <div className="product_img_overlay">
+          <div className="overlay_txt">View</div>
+          </div>
+        </div>
+        <h5 className="product_title">{this.props.product.title}</h5>
+        <span className="product_price">${variant.price}</span>
+        <label className="product_option">
+          Quantity: 
           <input min="1" type="number" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
         </label>
-        <button className="product__buy button" onClick={() => this.props.addItemToCart(variant.id, variantQuantity)}>Add to Cart</button>
+        <button className="product_buy_btn" onClick={() => this.props.addItemToCart(variant.id, variantQuantity)}>Add to Cart</button>
       </div>
     );
   }

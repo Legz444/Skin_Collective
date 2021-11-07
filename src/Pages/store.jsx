@@ -128,13 +128,14 @@ removeLineItemInCart(lineItemId){
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link href="#contact">Contact</Nav.Link>
                 <Link to="/">Home</Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
             <div className="sidebar">
-                <h1>Collections</h1>  
+                <h1>Collections</h1>
+                <h5>Brands</h5>
+                <h5>Product</h5> 
             </div>
             <Products
                 products={this.state.products}

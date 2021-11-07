@@ -52,10 +52,10 @@ const Contact = () => {
                                     <Form.Control as="textarea" placeholder="Message" rows="8" name="Message" required/>
                             </Col>
                         </Form.Row>
-                        <Button className="button" onClick={handleClose}>
+                        <Button className="close_contact_button" onClick={handleClose}>
                             Close
                         </Button>
-                        <Button className="button" type="submit" onClick={handleClose}>
+                        <Button className="send_contact_button" type="submit" onClick={handleClose}>
                             Send Message
                         </Button>
                     </Form>
