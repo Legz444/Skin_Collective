@@ -20,6 +20,7 @@ class Store extends Component {
       checkout: { lineItems: [] },
       products: [],
       product: {},
+      collection: [],
       shop: {}
     };
   // set each of the functions to this state with bind()
@@ -32,77 +33,74 @@ class Store extends Component {
 
   // create functions
 
-  componentWillMount() {
-    this.props.client.checkout.create().then((res) => {
-      this.setState({
-        checkout: res
-      });
-    });
-    this.props.client.product.fetchAll().then((res) => {
-        this.setState({
-            products: res
+    componentWillMount() {
+        this.props.client.checkout.create().then((res) => {
+            this.setState({
+                checkout: res
+            });
         });
-    });
-    this. props.client.shop. fetchInfo().then((res) => {
-        this.setState({
-            shop: res
+        this.props.client.product.fetchAll().then((res) => {
+            this.setState({
+                products: res
+            });
         });
-    });
-  }
-  //close Cart
-  handleCartClose(){
-    this.setState({
-      isCartOpen: false
-    });
-  }
+        this.props.client.collection.fetchAll().then((res) => {
+            this.setState({
+                collection: res
+            });
+        });
+        this. props.client.shop.fetchInfo().then((res) => {
+            this.setState({
+                shop: res
+            });
+        });
+    }
+    //close Cart
+    handleCartClose(){
+        this.setState({
+            isCartOpen: false
+        });
+    }
 
   // add items to cart, set open cart and set checkout state
-  addItemToCart(variantId, quantity){
-    this.setState({
-      isCartOpen: true
+    addItemToCart(variantId, quantity){
+        this.setState({
+        isCartOpen: true
     });
     const lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]
     const checkoutId = this.state.checkout.id
 
     return this.props.client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {
-      this.setState({
-        checkout: res
-      });
+        this.setState({
+            checkout: res
+        });
     });
-  }
+    }
 
   // update the quantity of an item in the cart
-  updateQuantityInCart(lineItemId, quantity) {
-    const checkoutId = this.state.checkout.variantId
-    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
-  
-    return this.props.ciient.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {
-      this.setState({
-        checkout: res
-      });
-    });
-  }
+    updateQuantityInCart(lineItemId, quantity) {
+        const checkoutId = this.state.checkout.variantId
+        const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
+
+        return this.props.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {
+            this.setState({
+                checkout: res
+            });
+        });
+    }
 // remove items Items from Cart
 removeLineItemInCart(lineItemId){
-  const checkoutId = this.state.checkout.id
+    const checkoutId = this.state.checkout.id
 
-  return this.props.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {
-    this.setState({
-      checkout: res
+    return this.props.client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {
+        this.setState({
+            checkout: res
+        });
     });
-  });
 }
-    // const { fetchAllProduct, products } = useContext(ShopContext);
 
-    // useEffect(() =>{
-    //     fetchAllProduct()
-    //     return() => {
-
-    //     };
-    // }, [fetchAllProduct]);
 
     render() {
-        console.log(this.state.products);
         return (
         <>
         <div className="store">
@@ -134,8 +132,6 @@ removeLineItemInCart(lineItemId){
             </Navbar>
             <div className="sidebar">
                 <h1>Collections</h1>
-                <h5>Brands</h5>
-                <h5>Product</h5> 
             </div>
             <Products
                 products={this.state.products}
