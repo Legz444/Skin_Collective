@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import{ Navbar, Nav} from 'react-bootstrap';
 import {FaInstagram} from 'react-icons/fa';
 import {FiFacebook} from 'react-icons/fi';
-import {Link} from 'react-router-dom';
+import {BsCart3} from 'react-icons/bs';
 import Cart from '../Components/Cart';
 
 
@@ -43,12 +43,13 @@ class Store extends Component {
             this.setState({
                 products: res
             });
+            console.log(this.state.products);
         });
-        this.props.client.collection.fetchAll().then((res) => {
-            this.setState({
-                collection: res
-            });
-        });
+        // this.props.client.collection.fetchAll().then((res) => {
+        //     this.setState({
+        //         collection: res
+        //     });
+        // });
         this. props.client.shop.fetchInfo().then((res) => {
             this.setState({
                 shop: res
@@ -116,31 +117,39 @@ removeLineItemInCart(lineItemId){
             </Navbar.Brand>
             
             <Navbar.Text className="nav d-flex smicon">
+                <Nav.Link className="d-inline-block p-3" href="/">
+                    Home
+                </Nav.Link>
                 <Nav.Link className="d-inline-block p-3" href="https://www.facebook.com/skincollectiveboulder">
                     <FiFacebook/>
                 </Nav.Link>
                 <Nav.Link className="d-inline-block p-3" href="https://www.instagram.com/boulderskincollective/">
                     <FaInstagram/>
                 </Nav.Link>
+                {!this.state.isCartOpen &&
+                    <button className="cart_btn"
+                        onClick={()=> this.setState({isCartOpen: true})}>
+                         <BsCart3/>
+                    </button>}
             </Navbar.Text>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                 <Link to="/">Home</Link>
                 </Nav>
-            </Navbar.Collapse>
+            </Navbar.Collapse> */}
             </Navbar>
-            <div className="sidebar">
+            {/* <div className="sidebar">
                 <h1>Collections</h1>
-            </div>
+            </div> */}
             <Products
                 products={this.state.products}
                 client={this.props.client}
                 addItemToCart={this.addItemToCart}
             />
             <Cart
-                checkout={this.state.checkout}
                 isCartOpen={this.state.isCartOpen}
+                checkout={this.state.checkout}
                 handleCartClose={this.handleCartClose}
                 updateQuantityInCart={this.updateQuantityInCart}
                 removeLineItemInCart={this.removeLineItemInCart}

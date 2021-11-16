@@ -63,7 +63,7 @@ class Product extends Component {
         <div className="img_container">
           {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`} className="product_img"/> : null}
           <div className="product_img_overlay">
-          <div className="overlay_txt">View</div>
+          <div className="overlay_txt">{this.props.product.description}</div>
           </div>
         </div>
         <h5 className="product_title">{this.props.product.title}</h5>
