@@ -132,24 +132,18 @@ removeLineItemInCart(lineItemId){
                          <BsCart3/>
                     </button>}
             </Navbar.Text>
-            {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                <Link to="/">Home</Link>
-                </Nav>
-            </Navbar.Collapse> */}
             </Navbar>
             {/* <div className="sidebar">
                 <h1>Collections</h1>
-            </div> */}
+            </div>  */}
             <Products
                 products={this.state.products}
                 client={this.props.client}
                 addItemToCart={this.addItemToCart}
             />
             <Cart
-                isCartOpen={this.state.isCartOpen}
                 checkout={this.state.checkout}
+                isCartOpen={this.state.isCartOpen}
                 handleCartClose={this.handleCartClose}
                 updateQuantityInCart={this.updateQuantityInCart}
                 removeLineItemInCart={this.removeLineItemInCart}

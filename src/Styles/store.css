@@ -23,35 +23,19 @@ body{
   font-family: 'Darker Grotesque', sans-serif;
     
 }
-
 .store{
-  /* width: 100vw; */
   display: flex;
   background-color: rgb(223 230 233);
 }
-.Cart{
-  margin-top: 100px;
-  background-color: white;
-}
 
-.Cart__checkout{
-  background-color: rgb(183 201 224);
-  color: rgb(22 38 46) ;
-  border: none ;
-  border-radius: 25px;
-  font-family: 'Darker Grotesque', sans-serif;
-  margin: 5px;
-  font-size: 1em ;
-  transition-duration: 0.4s;
-}
-.Cart_footer{
-  background-color: white;
-}
+/* Sidebar Styles */
 .sidebar{
   margin-top: 100px;
   width: 15vw;
   height: 100vh;
 }
+
+/* Product Grid Styles */
 .product_grid{
   background-color: white;
   margin-top: 100px;
@@ -95,7 +79,7 @@ body{
 
 .overlay_txt {
   color: black;
-  font-size: .7em;
+  font-size: .6em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,4 +114,88 @@ body{
 .product_buy_btn:hover{
   background-color: rgb(47 70 85);
   color: white;
+}
+
+/* Cart Styles */
+.Cart{
+  margin-top: 100px;
+  background-color: white;
+  padding-top: 25px;
+}
+.Cart_h2{
+  font-size: 1.5em;
+  text-align: center;
+}
+.Cart__checkout{
+  background-color: rgb(183 201 224);
+  color: rgb(22 38 46) ;
+  border: none ;
+  border-radius: 25px;
+  font-family: 'Darker Grotesque', sans-serif;
+  margin: 5px;
+  font-size: 1em ;
+  transition-duration: 0.4s;
+}
+.Cart__checkout:hover{
+  background-color: rgb(47 70 85);
+  color: white;
+}
+
+.Cart__footer{
+  background-color: white;
+}
+
+/* line Items in Cart */
+.line_item{
+  margin-bottom: 50px;
+}
+.Line-item__content-row{
+  text-align: center;
+}
+.Line-item__remove{
+  background-color: rgb(183 201 224);
+  color: rgb(22 38 46) ;
+  border: none ;
+  border-radius: 25px;
+  font-family: 'Darker Grotesque', sans-serif;
+  margin: 5px;
+  font-size: 1em ;
+  transition-duration: 0.4s;
+}
+.Line-item__remove:hover{
+  background-color: rgb(47 70 85);
+  color: white;
+}
+
+
+/* Media queries */
+
+@media (min-width: 319px){
+
+
+}
+@media (min-width: 400px){
+
+}
+
+/* // [ sm ] Small devices (landscape phones, 576px and up) */ 
+@media (min-width: 565px) {
+
+}
+/* // [ md ] Medium devices (tablets, 768px and up) */
+@media (min-width: 765px) {
+
+  }
+@media (min-width: 800px){
+
+ }
+/* // [ lg ] Large devices (desktops, 992px and up) */
+@media (min-width: 900px) {
+  
+}
+ 
+
+/* // [ xl ] Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1020px) { 
+
 }

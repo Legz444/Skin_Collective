@@ -21,27 +21,26 @@ incrementQuantity(lineItemId){
         return(
             <li className="line_item">
                 <div className="line_item_img">
-                    {this.props.line_item.variant.image ? <img src={this.props.line_item.variant.image.src} alt={`${this.props.line_item.title} product shot`}/> : null}
+                    {this.props.line_item.variant.image ? <img src={this.props.line_item.variant.image.src} alt={`${this.props.line_item.title} product shot`} width="200px"/> : null}
                 </div>
                 <div className="Line-item__content">
                 <div className="Line-item__content-row">
-                    <div className="Line-item__variant-title">
-                    {this.props.line_item.variant.title}
-                    </div>
+                    
                     <span className="Line-item__title">
                     {this.props.line_item.title}
                     </span>
                 </div>
                 <div className="Line-item__content-row">
-                    <div className="Line-item__quantity-container">
+                    {/* <div className="Line-item__quantity-container">
                     <button className="Line-item__quantity-update" onClick={() => this.decrementQuantity(this.props.line_item.id)}>-</button>
                     <span className="Line-item__quantity">{this.props.line_item.quantity}</span>
                     <button className="Line-item__quantity-update" onClick={() => this.incrementQuantity(this.props.line_item.id)}>+</button>
-                    </div>
+                    </div> */}
                     <span className="Line-item__price">
                     $ { (this.props.line_item.quantity * this.props.line_item.variant.price).toFixed(2) }
                     </span>
-                    <button className="Line-item__remove" onClick={()=> this.props.removeLineItemInCart(this.props.line_item.id)}>×</button>
+                    <br></br>
+                    <button className="Line-item__remove" onClick={()=> this.props.removeLineItemInCart(this.props.line_item.id)}>Remove Item</button>
                 </div>
                 </div>
             </li>

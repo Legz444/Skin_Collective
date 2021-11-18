@@ -27,36 +27,39 @@ class Cart extends Component{
     })
         return(
             <div className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}>
-            <header className="Cart_header">
-            <h2 className="Cart_title">Cart</h2>
-            <button className="Cart_close" onClick={this.props.handleCartClose}>
-                Close</button>
-            </header>
-            <ul className="Cart_line_items">
-                {line_items}
-            </ul>
-            <footer className="Cart_footer">
-            <div className="Cart-info clearfix">
-                <div className="Cart-info__total Cart-info__small">Subtotal:</div>
-                <div className="Cart-info__pricing">
-                <span className="pricing">$ {this.props.checkout.subtotalPrice}</span>
+                <header className="Cart__header">
+                    <button
+                        onClick={this.props.handleCartClose}
+                        className="Cart__close">
+                        ×
+                    </button>
+                    <h2 className="Cart_h2">Let's get you Checked Out:</h2>
+                    </header>
+                    <ul className="Cart__line-items">
+                    {line_items}
+                    </ul>
+                    <footer className="Cart__footer">
+                    <div className="Cart-info clearfix">
+                        <div className="Cart-info__total Cart-info__small">Subtotal</div>
+                        <div className="Cart-info__pricing">
+                        <span className="pricing">$ {this.props.checkout.subtotalPrice}</span>
+                        </div>
+                    </div>
+                    <div className="Cart-info clearfix">
+                        <div className="Cart-info__total Cart-info__small">Taxes</div>
+                        <div className="Cart-info__pricing">
+                        <span className="pricing">$ {this.props.checkout.totalTax}</span>
+                        </div>
+                    </div>
+                    <div className="Cart-info clearfix">
+                        <div className="Cart-info__total Cart-info__small">Total</div>
+                        <div className="Cart-info__pricing">
+                        <span className="pricing">$ {this.props.checkout.totalPrice}</span>
+                        </div>
+                    </div>
+                    <button className="Cart__checkout button" onClick={this.openCheckout}>Checkout</button>
+                    </footer>
                 </div>
-            </div>
-            <div className="Cart-info clearfix">
-                <div className="Cart-info__total Cart-info__small">Taxes:</div>
-                <div className="Cart-info__pricing">
-                <span className="pricing">$ {this.props.checkout.totalTax}</span>
-                </div>
-            </div>
-            <div className="Cart-info clearfix">
-                <div className="Cart-info__total Cart-info__small">Total:</div>
-                <div className="Cart-info__pricing">
-                <span className="pricing">$ {this.props.checkout.totalPrice}</span>
-                </div>
-            </div>
-            <button className="Cart__checkout button" onClick={this.openCheckout}>Checkout</button>
-            </footer>
-        </div>
       )
     }
 }
