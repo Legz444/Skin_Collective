@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import '../Styles/store.css';
 import Products from '../Components/Products';
 import "bootstrap/dist/css/bootstrap.min.css";
-import{ Navbar, Nav} from 'react-bootstrap';
+import{ Navbar, Nav, Image} from 'react-bootstrap';
 import {FaInstagram} from 'react-icons/fa';
 import {FiFacebook} from 'react-icons/fi';
 import {BsCart3} from 'react-icons/bs';
+import {BsArrow90DegLeft} from 'react-icons/bs'
 import Cart from '../Components/Cart';
 
 
@@ -19,7 +20,6 @@ class Store extends Component {
       isCartOpen: false,
       checkout: { lineItems: [] },
       products: [],
-      product: {},
       collection: [],
       shop: {}
     };
@@ -45,23 +45,13 @@ class Store extends Component {
             });
             console.log(this.state.products);
         });
-        // this.props.client.collection.fetchAll().then((res) => {
-        //     this.setState({
-        //         collection: res
-        //     });
-        // });
         this. props.client.shop.fetchInfo().then((res) => {
             this.setState({
                 shop: res
             });
         });
     }
-    //close Cart
-    handleCartClose(){
-        this.setState({
-            isCartOpen: false
-        });
-    }
+
 
   // add items to cart, set open cart and set checkout state
     addItemToCart(variantId, quantity){
@@ -80,7 +70,7 @@ class Store extends Component {
 
   // update the quantity of an item in the cart
     updateQuantityInCart(lineItemId, quantity) {
-        const checkoutId = this.state.checkout.variantId
+        const checkoutId = this.state.checkout.id
         const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
 
         return this.props.client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {
@@ -100,11 +90,18 @@ removeLineItemInCart(lineItemId){
     });
 }
 
-
+    //close Cart
+    handleCartClose(){
+        this.setState({
+            isCartOpen: false
+        });
+    }
+    
     render() {
         return (
         <>
         <div className="store">
+            <Image className="banner" src="https://res.cloudinary.com/legz444/image/upload/v1637781014/skin_collective/Black_Friday_Sale_20_off_Everything_Applied_at_Checkout_1_kmeszl.png" fluid />
             <Navbar collapseOnSelect expand={false} bg="light" variant="light" className="navbar" fixed="top">
             <Navbar.Brand href="#home">
                 <img 
@@ -116,9 +113,9 @@ removeLineItemInCart(lineItemId){
                 />
             </Navbar.Brand>
             
-            <Navbar.Text className="nav d-flex smicon">
+            <Navbar.Text className="nav d-flex justify-content-end">
                 <Nav.Link className="d-inline-block p-3" href="/">
-                    Home
+                    <BsArrow90DegLeft/>
                 </Nav.Link>
                 <Nav.Link className="d-inline-block p-3" href="https://www.facebook.com/skincollectiveboulder">
                     <FiFacebook/>
@@ -126,28 +123,33 @@ removeLineItemInCart(lineItemId){
                 <Nav.Link className="d-inline-block p-3" href="https://www.instagram.com/boulderskincollective/">
                     <FaInstagram/>
                 </Nav.Link>
-                {!this.state.isCartOpen &&
+                {/* {!this.state.isCartOpen &&
                     <button className="cart_btn"
                         onClick={()=> this.setState({isCartOpen: true})}>
-                         <BsCart3/>
-                    </button>}
+                        <BsCart3/>
+                    </button>} */}
             </Navbar.Text>
             </Navbar>
+            
+            <div className="store_main">
             {/* <div className="sidebar">
-                <h1>Collections</h1>
+                
             </div>  */}
-            <Products
-                products={this.state.products}
-                client={this.props.client}
-                addItemToCart={this.addItemToCart}
-            />
-            <Cart
-                checkout={this.state.checkout}
-                isCartOpen={this.state.isCartOpen}
-                handleCartClose={this.handleCartClose}
-                updateQuantityInCart={this.updateQuantityInCart}
-                removeLineItemInCart={this.removeLineItemInCart}
-            />
+                
+                <Products
+                    products={this.state.products}
+                    client={this.props.client}
+                    addItemToCart={this.addItemToCart}
+                />
+                
+                <Cart
+                    checkout={this.state.checkout}
+                    isCartOpen={this.state.isCartOpen}
+                    handleCartClose={this.handleCartClose}
+                    updateQuantityInCart={this.updateQuantityInCart}
+                    removeLineItemInCart={this.removeLineItemInCart}
+                />
+            </div>
         </div>
         </>
         );

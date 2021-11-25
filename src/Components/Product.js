@@ -66,13 +66,15 @@ class Product extends Component {
           <div className="overlay_txt">{this.props.product.description}</div>
           </div>
         </div>
-        <h5 className="product_title">{this.props.product.title}</h5>
-        <span className="product_price">${variant.price}</span>
-        <label className="product_option">
-          Quantity: 
-          <input min="1" type="number" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
-        </label>
-        <button className="product_buy_btn" onClick={() => this.props.addItemToCart(variant.id, variantQuantity)}>Add to Cart</button>
+        
+          <h5 className="product_title">{this.props.product.title}</h5>
+          <span className="product_price">${variant.price}</span>
+          <label className="product_option">
+            Quantity: 
+            <input min="1" type="number" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
+          </label>
+          <button className="product_buy_btn" onClick={() => this.props.addItemToCart(variant.id, variantQuantity)}>Add to Cart</button>
+        
       </div>
     );
   }

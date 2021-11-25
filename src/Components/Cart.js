@@ -8,7 +8,7 @@ class Cart extends Component{
 
     this.openCheckout = this.openCheckout.bind(this);
     }
-    //make a function to open the checkout window and populate it with the client's checkout items
+    //make a function to open the shopify checkout window and populate it with the client's checkout items
     openCheckout() {
         window.open(this.props.checkout.webUrl);
     }
@@ -28,12 +28,12 @@ class Cart extends Component{
         return(
             <div className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}>
                 <header className="Cart__header">
-                    <button
+                    {/* <button
                         onClick={this.props.handleCartClose}
                         className="Cart__close">
                         ×
-                    </button>
-                    <h2 className="Cart_h2">Let's get you Checked Out:</h2>
+                    </button> */}
+                    <h2 className="Cart_h2">Check Out:</h2>
                     </header>
                     <ul className="Cart__line-items">
                     {line_items}

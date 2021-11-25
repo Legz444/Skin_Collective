@@ -35,12 +35,15 @@ const Main = () => {
             <div className="overlay">
             <img 
                 className= "img-responsive"
-                src="https://res.cloudinary.com/legz444/image/upload/v1624299963/skin_collective/secondary_logo_byvxqd.png"
-                width="400"
-                height="400"
+                src="https://res.cloudinary.com/legz444/image/upload/v1624299955/skin_collective/primary_logo_sgdmn6.png"
+                width="300"
+                height="300"
                 alt="Skin Collective Logo"/>
             </div>
-            <Button className="button" href="https://www.myaestheticspro.com/booknow/index.cfm?6C7A1A2C8B9ED7DBDF0D8A88769FF081">Book Now</Button>
+            <div className="header_btn_div">
+                <button className="button" id="header_btn"><a href="https://www.myaestheticspro.com/booknow/index.cfm?6C7A1A2C8B9ED7DBDF0D8A88769FF081">Book Now</a></button>
+                <button className="button" id="header_btn"><a href="https://boulder-skin-collective.myshopify.com/">Shop All</a></button>
+            </div>
         </header>
         <body>
             <article className="mission">

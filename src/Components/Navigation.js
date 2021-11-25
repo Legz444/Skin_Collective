@@ -36,7 +36,7 @@ const Navigate = () => {
                 <Nav.Link href="#products">Products</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
                 <Nav.Link href="https://www.myaestheticspro.com/clientportal/dsp_loginportal.cfm?6C7A1A2C8B9ED7DBDF0D8A88769FF081">Log-In Patient Portal</Nav.Link>
-                <Link to="/store">Online Store</Link>
+                <Nav.Link href="https://boulder-skin-collective.myshopify.com/">Online Store</Nav.Link>
                 
                 </Nav>
             </Navbar.Collapse>
